@@ -152,14 +152,14 @@
 			</frame>
 			<frame>
 				<reportElement x="320" y="0" width="235" height="250" uuid="056a754d-3d9e-4198-b202-f3e1701a7349"/>
-				<image>
+				<!-- <image>
 					<reportElement x="125" y="30" width="100" height="105" uuid="10663188-7249-42a6-8f7f-32f1ff3d397d"/>
 					<imageExpression><![CDATA["/images/stamp.png"]]></imageExpression>
 				</image>
 				<image>
 					<reportElement x="66" y="80" width="110" height="20" uuid="11fe5e73-f8c3-437a-a2c5-e401c091b8df"/>
 					<imageExpression><![CDATA["/images/heading.png"]]></imageExpression>
-				</image>
+				</image> -->
 				<textField>
 					<reportElement x="133" y="1" width="100" height="20" uuid="5f561927-602e-410d-b02a-c3b71f9f8209"/>
 					<textFieldExpression><![CDATA[$F{dateOfIssuance}]]></textFieldExpression>

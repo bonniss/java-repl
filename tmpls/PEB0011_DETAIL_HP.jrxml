@@ -214,10 +214,10 @@
 	</background>
 	<title>
 		<band height="48" splitType="Stretch">
-			<image>
+			<!-- <image>
 				<reportElement x="412" y="22" width="143" height="26" uuid="b82f361d-2492-43de-90db-9ef0ab61aced"/>
 				<imageExpression><![CDATA["/images/heading.png"]]></imageExpression>
-			</image>
+			</image> -->
 			<staticText>
 				<reportElement x="390" y="0" width="60" height="15" uuid="f5dc064c-d54a-4c4c-bcf6-bbc6d1391a1d"/>
 				<text><![CDATA[発行年月日]]></text>
