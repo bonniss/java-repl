@@ -242,7 +242,7 @@ TEL:050-3852-1193
 						<rightPen lineWidth="1.0"/>
 					</box>
 					<textElement textAlignment="Center" verticalAlignment="Middle"/>
-					<textFieldExpression><![CDATA[$F{billingAmount}+"円"]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{billingAmount} != null ? ($F{billingAmount}.toString() + "円") : ""]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="110" y="0" width="110" height="30" uuid="ab4252a7-ceab-438c-a7e5-6f6c35971086">
