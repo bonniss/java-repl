@@ -3,6 +3,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PEB0011_LP" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f398a114-b5fb-4c49-89d0-9e9e204ef049">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<style name="defaultStyle" isDefault="true" fontName="IPAexフォント" pdfFontName="IPAexフォント"/>
+    <!-- START FIELDS DECLARATION -->
 	<field name="amountToUse" class="java.lang.String">
 		<fieldDescription><![CDATA[使用量]]></fieldDescription>
 	</field>
@@ -105,6 +106,7 @@
 	<field name="usageUnit" class="java.lang.String">
 		<fieldDescription><![CDATA[使用量単位]]></fieldDescription>
 	</field>
+    <!-- END FIELDS DECLARATION -->
 	<background>
 		<band splitType="Stretch"/>
 	</background>

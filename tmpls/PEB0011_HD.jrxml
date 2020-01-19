@@ -2,18 +2,17 @@
 <!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PEB0011_HD" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6eb1f3c4-119d-43c2-8a7e-45d7d68912d9">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+    <style name="defaultStyle" isDefault="true" fontName="IPAexフォント" pdfFontName="IPAexフォント"/>
+    <!-- START FIELDS DECLARATION -->
 	<parameter name="HTBE_PAYMENT_METHOD" class="java.math.BigDecimal"/>
 	<parameter name="HTBE_PAYMENT_SERIAL" class="java.math.BigDecimal"/>
 	<parameter name="HTBE_PRESSURE_TYPE" class="java.lang.String">
 		<defaultValueExpression><![CDATA["HP"]]></defaultValueExpression>
 	</parameter>
-	<queryString>
-		<![CDATA[]]>
-	</queryString>
 	<field name="accountTypeYourDesignatedAccount" class="java.lang.String">
 		<fieldDescription><![CDATA[ご指定口座_口座種別]]></fieldDescription>
 	</field>
-	<field name="address_1" class="java.lang.String">
+	<field name="address" class="java.lang.String">
 		<fieldDescription><![CDATA[住所１]]></fieldDescription>
 	</field>
 	<field name="address_2" class="java.lang.String">
@@ -61,7 +60,7 @@
 	<field name="contactPersonName" class="java.lang.String">
 		<fieldDescription><![CDATA[担当者名]]></fieldDescription>
 	</field>
-	<field name="contractorCode" class="java.lang.String">
+	<field name="contractorCd" class="java.lang.String">
 		<fieldDescription><![CDATA[契約者コード]]></fieldDescription>
 	</field>
 	<field name="dateOfIssuance" class="java.lang.String">
@@ -85,11 +84,8 @@
 	<field name="dunningWording_9" class="java.lang.String">
 		<fieldDescription><![CDATA[督促状文言9]]></fieldDescription>
 	</field>
-	<field name="houseName" class="java.lang.String">
+	<field name="housingName" class="java.lang.String">
 		<fieldDescription><![CDATA[集合住宅名]]></fieldDescription>
-	</field>
-	<field name="houseNo" class="java.lang.String">
-		<fieldDescription><![CDATA[番号]]></fieldDescription>
 	</field>
 	<field name="issue" class="java.lang.String">
 		<fieldDescription><![CDATA[号]]></fieldDescription>
@@ -106,7 +102,7 @@
 	<field name="pleaseSpecifyAccountFinancialInstitutionName" class="java.lang.String">
 		<fieldDescription><![CDATA[ご指定口座_金融機関名]]></fieldDescription>
 	</field>
-	<field name="postalCode" class="java.lang.String">
+	<field name="postalCd" class="java.lang.String">
 		<fieldDescription><![CDATA[郵便番号]]></fieldDescription>
 	</field>
 	<field name="roomNo" class="java.lang.String">
@@ -118,6 +114,7 @@
 	<field name="transferDate" class="java.lang.String">
 		<fieldDescription><![CDATA[振替予定日]]></fieldDescription>
 	</field>
+    <!-- END FIELDS DECLARATION -->
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -130,15 +127,15 @@
 				</reportElement>
 				<textField>
 					<reportElement x="20" y="1" width="80" height="20" uuid="e21a36eb-f28b-495f-b90b-9de2e50b702b"/>
-					<textFieldExpression><![CDATA[$F{postalCode}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{postalCd}]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="20" y="52" width="250" height="20" uuid="9d8b1c50-33ae-4920-ab7d-59780584ba73"/>
-					<textFieldExpression><![CDATA[$F{houseName}+$F{building}+$F{roomNo}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{housingName}+$F{building}+$F{roomNo}]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="20" y="30" width="250" height="22" uuid="dee6d963-1c00-494c-a20d-c7181ef2d714"/>
-					<textFieldExpression><![CDATA[$F{address_1}+$F{address_2}+$F{issue}+$F{houseNo}+$F{district}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{address}+$F{address_2}+$F{issue}+$F{district}]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="22" y="112" width="148" height="21" uuid="2f0c9bfe-17aa-4552-b085-63ac7457c59a"/>
@@ -287,7 +284,7 @@ TEL:050-3852-1193
 					</staticText>
 					<textField>
 						<reportElement x="86" y="10" width="108" height="20" uuid="93dc1f4b-eeae-4b37-bb67-c12b75459313"/>
-						<textFieldExpression><![CDATA[$F{contractorCode}]]></textFieldExpression>
+						<textFieldExpression><![CDATA[$F{contractorCd}]]></textFieldExpression>
 					</textField>
 					<textField>
 						<reportElement x="86" y="35" width="108" height="20" uuid="d2705f61-682a-4f3f-94ed-46097fcabb35"/>
