@@ -2,9 +2,7 @@
 <!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PEB0011_DETAIL_HP" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d05b963e-f2ec-4825-8a5b-6fbceaf4e311">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
-    <style name="defaultStyle" isDefault="true" fontName="IPAexフォント"/>
-    <!-- START FIELDS DECLARATION -->
-    <!-- No.2 -->
+	<style name="defaultStyle" isDefault="true" fontName="IPAexフォント"/>
 	<field name="dateOfIssuance" class="java.lang.String">
 		<fieldDescription><![CDATA[発行年月日]]></fieldDescription>
 	</field>
@@ -14,7 +12,6 @@
 	<field name="billingDate" class="java.lang.String">
 		<fieldDescription><![CDATA[請求年月]]></fieldDescription>
 	</field>
-    <!-- No.3 -->
 	<field name="billingAmount" class="java.lang.String">
 		<fieldDescription><![CDATA[請求金額]]></fieldDescription>
 	</field>
@@ -192,32 +189,14 @@
 	<field name="theTotalAmountOfElectricPowerUsed" class="java.lang.String">
 		<fieldDescription><![CDATA[使用電力量合計]]></fieldDescription>
 	</field>
-    <!-- No.4 -->
-    <!-- <field name="itemName" class="java.lang.String">
-		<fieldDescription><![CDATA[項目名]]></fieldDescription>
+    <field name="totalAmt" class="java.lang.String">
+		<fieldDescription><![CDATA[消費税相当額]]></fieldDescription>
 	</field>
-	<field name="unitPrice" class="java.lang.String">
-		<fieldDescription><![CDATA[単価]]></fieldDescription>
-	</field>
-	<field name="unitPriceUnit" class="java.lang.String">
-		<fieldDescription><![CDATA[単価単位]]></fieldDescription>
-	</field>
-	<field name="usageUnit" class="java.lang.String">
-		<fieldDescription><![CDATA[使用量単位]]></fieldDescription>
-	</field>
-	<field name="fee" class="java.lang.String">
-		<fieldDescription><![CDATA[料金]]></fieldDescription>
-	</field> -->
-    <!-- END FIELDS DECLARATION -->
 	<background>
 		<band splitType="Stretch"/>
 	</background>
 	<title>
 		<band height="48" splitType="Stretch">
-			<!-- <image>
-				<reportElement x="412" y="22" width="143" height="26" uuid="b82f361d-2492-43de-90db-9ef0ab61aced"/>
-				<imageExpression><![CDATA["/images/heading.png"]]></imageExpression>
-			</image> -->
 			<staticText>
 				<reportElement x="390" y="0" width="60" height="15" uuid="f5dc064c-d54a-4c4c-bcf6-bbc6d1391a1d"/>
 				<text><![CDATA[発行年月日]]></text>
@@ -1011,7 +990,7 @@
 						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					</box>
 					<textElement verticalAlignment="Middle"/>
-					<textFieldExpression><![CDATA[$F{demandDestinationName}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{demandLocationPlantName}]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement mode="Opaque" x="0" y="40" width="110" height="20" backcolor="#DCE6F1" uuid="0a2f9c2d-3b46-4f7a-8d93-e605dfbd0cf9"/>
@@ -1035,7 +1014,7 @@
 						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					</box>
 					<textElement verticalAlignment="Middle"/>
-					<textFieldExpression><![CDATA[$F{demandLocationPlantName}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{demandDestinationName}]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement mode="Opaque" x="0" y="140" width="110" height="20" backcolor="#DCE6F1" uuid="93dfb218-4c68-4c11-a742-59c1651ad275"/>
@@ -1072,7 +1051,7 @@
 						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					</box>
 					<textElement verticalAlignment="Middle"/>
-					<textFieldExpression><![CDATA[$F{demandAddress}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{contractType}]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="110" y="100" width="240" height="20" uuid="0b658e13-1f22-4310-b7a6-0aaaaeeacb44"/>
@@ -1094,7 +1073,7 @@
 						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					</box>
 					<textElement verticalAlignment="Middle"/>
-					<textFieldExpression><![CDATA[$F{contractType}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{contractPower}]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement mode="Opaque" x="0" y="80" width="110" height="20" backcolor="#DCE6F1" uuid="fff089c0-0a66-4225-bdeb-56a00df4ddb0"/>
@@ -1131,7 +1110,7 @@
 						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					</box>
 					<textElement verticalAlignment="Middle"/>
-					<textFieldExpression><![CDATA[$F{contractPower}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{demandAddress}]]></textFieldExpression>
 				</textField>
 			</frame>
 			<frame>
@@ -1430,6 +1409,63 @@
 		<band height="54" splitType="Stretch"/>
 	</pageFooter>
 	<summary>
-		<band height="125" splitType="Stretch"/>
+		<band height="125" splitType="Stretch">
+			<frame>
+				<reportElement key="frmTotalAmt" x="330" y="5" width="224" height="50" uuid="f77df43b-5d56-4d7b-a738-654869ce2fc0">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.grid.JSSGridBagLayout"/>
+					<property name="com.jaspersoft.studio.element.name" value="frmTotalAmt"/>
+				</reportElement>
+				<staticText>
+					<reportElement x="0" y="0" width="112" height="25" uuid="0be7c868-6139-4f8b-9e27-c84f9df3bfb7">
+						<property name="com.jaspersoft.layout.grid.x" value="0"/>
+						<property name="com.jaspersoft.layout.grid.y" value="0"/>
+						<property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+					</reportElement>
+					<text><![CDATA[ご請求金額]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="25" width="112" height="25" uuid="9a3f8e8c-2d96-4a5e-96fb-4c837ec06d21">
+						<property name="com.jaspersoft.layout.grid.x" value="0"/>
+						<property name="com.jaspersoft.layout.grid.y" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+					</reportElement>
+					<text><![CDATA[消費税相当額]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="112" y="0" width="112" height="25" uuid="8045ceed-fded-49a4-8e9b-6126812f738f">
+						<property name="com.jaspersoft.layout.grid.x" value="1"/>
+						<property name="com.jaspersoft.layout.grid.y" value="0"/>
+						<property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+					</reportElement>
+					<textElement textAlignment="Right"/>
+					<textFieldExpression><![CDATA[$F{totalAmt}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="112" y="25" width="112" height="25" uuid="63091f73-83d9-46cb-af4c-853aefd8f988">
+						<property name="com.jaspersoft.layout.grid.x" value="1"/>
+						<property name="com.jaspersoft.layout.grid.y" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+					</reportElement>
+					<textElement textAlignment="Right"/>
+					<textFieldExpression><![CDATA[$F{taxEquivalent}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
 	</summary>
 </jasperReport>
