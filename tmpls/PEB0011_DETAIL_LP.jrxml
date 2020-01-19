@@ -115,7 +115,8 @@
 				<textFieldExpression><![CDATA[$F{billingDate}+"　発行年月日"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="200" y="0" width="90" height="15" uuid="cd1e6cfe-6d72-4c79-bd7f-6c8c3e6edc76"/>
+				<reportElement x="204" y="0" width="90" height="22" uuid="cd1e6cfe-6d72-4c79-bd7f-6c8c3e6edc76"/>
+				<textElement verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[$F{billableNumberOfBases}]]></textFieldExpression>
 			</textField>
 		</band>
