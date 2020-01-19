@@ -39,10 +39,10 @@
 	<field name="demandLocationPlantName" class="java.lang.String">
 		<fieldDescription><![CDATA[需要場所事業場名]]></fieldDescription>
 	</field>
-	<field name="fuelCostAdjustmentAmountTheMonth_1" class="java.math.BigDecimal">
+	<field name="fuelCostAdjustmentAmountTheMonth_1" class="java.lang.String">
 		<fieldDescription><![CDATA[燃料費調整額_当月1]]></fieldDescription>
 	</field>
-	<field name="fuelCostAdjustmentAmountTheNextMonth_1" class="java.math.BigDecimal">
+	<field name="fuelCostAdjustmentAmountTheNextMonth_1" class="java.lang.String">
 		<fieldDescription><![CDATA[燃料費調整額_翌月1]]></fieldDescription>
 	</field>
 	<field name="maximumDemandYears_1" class="java.lang.String">
@@ -156,10 +156,10 @@
 	<field name="powerFactor" class="java.lang.String">
 		<fieldDescription><![CDATA[力率]]></fieldDescription>
 	</field>
-	<field name="previousMonthFuelCostAdjustmentAmount" class="java.math.BigDecimal">
+	<field name="previousMonthFuelCostAdjustmentAmount" class="java.lang.String">
 		<fieldDescription><![CDATA[燃料費調整額_前月]]></fieldDescription>
 	</field>
-	<field name="renewableEnergyPowerGenerationPromotionLevyTheMonth" class="java.math.BigDecimal">
+	<field name="renewableEnergyPowerGenerationPromotionLevyTheMonth" class="java.lang.String">
 		<fieldDescription><![CDATA[再エネ発電促進賦課金_当月]]></fieldDescription>
 	</field>
 	<field name="supplyPointSpecificNumber" class="java.lang.String">
@@ -1295,7 +1295,7 @@
 						<rightPen lineWidth="1.0"/>
 					</box>
 					<textElement textAlignment="Center" verticalAlignment="Middle"/>
-					<textFieldExpression><![CDATA[($F{previousMonthFuelCostAdjustmentAmount}==null || BigDecimal.ZERO.equals($F{previousMonthFuelCostAdjustmentAmount}))? 0 : "▲" + $F{previousMonthFuelCostAdjustmentAmount}.toString()+"円／kWh"]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{previousMonthFuelCostAdjustmentAmount}]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement mode="Opaque" x="0" y="24" width="49" height="24" backcolor="#DCE6F1" uuid="6e225bfb-3cb6-4412-aab5-c7dea9c3b9ba">
@@ -1331,7 +1331,7 @@
 						<rightPen lineWidth="1.0"/>
 					</box>
 					<textElement textAlignment="Center" verticalAlignment="Middle"/>
-					<textFieldExpression><![CDATA[($F{fuelCostAdjustmentAmountTheMonth_1}==null || BigDecimal.ZERO.equals($F{fuelCostAdjustmentAmountTheMonth_1}))? 0 : "▲" + $F{fuelCostAdjustmentAmountTheMonth_1}.toString()+"円／kWh"]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{fuelCostAdjustmentAmountTheMonth_1}]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="49" y="48" width="145" height="23" uuid="fa59c418-93f9-454b-887c-aecf3f8f0299">
@@ -1348,7 +1348,7 @@
 						<rightPen lineWidth="1.0"/>
 					</box>
 					<textElement textAlignment="Center" verticalAlignment="Middle"/>
-					<textFieldExpression><![CDATA[($F{fuelCostAdjustmentAmountTheNextMonth_1}==null || BigDecimal.ZERO.equals($F{fuelCostAdjustmentAmountTheNextMonth_1}))? 0 : "▲" + $F{fuelCostAdjustmentAmountTheNextMonth_1}.toString()+"円／kWh"]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{fuelCostAdjustmentAmountTheNextMonth_1}]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement mode="Opaque" x="0" y="48" width="49" height="23" backcolor="#DCE6F1" uuid="b9501400-ac88-46e0-b22f-4264bb8632a8">
@@ -1418,7 +1418,7 @@
 						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
 					</reportElement>
 					<textElement textAlignment="Center" verticalAlignment="Middle"/>
-					<textFieldExpression><![CDATA[($F{renewableEnergyPowerGenerationPromotionLevyTheMonth}==null || BigDecimal.ZERO.equals($F{renewableEnergyPowerGenerationPromotionLevyTheMonth}))? 0 : "▲" + $F{renewableEnergyPowerGenerationPromotionLevyTheMonth}.toString()+"円／kWh"]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{renewableEnergyPowerGenerationPromotionLevyTheMonth}]]></textFieldExpression>
 				</textField>
 			</frame>
 		</band>
