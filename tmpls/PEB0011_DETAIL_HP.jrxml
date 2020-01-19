@@ -1,0 +1,1435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PEB0011_DETAIL_HP" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d05b963e-f2ec-4825-8a5b-6fbceaf4e311">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="amountToUse" class="java.lang.String">
+		<fieldDescription><![CDATA[使用量]]></fieldDescription>
+	</field>
+	<field name="billableNumberOfBases" class="java.lang.String">
+		<fieldDescription><![CDATA[請求対象拠点数]]></fieldDescription>
+	</field>
+	<field name="billingAmount" class="java.lang.String">
+		<fieldDescription><![CDATA[請求金額]]></fieldDescription>
+	</field>
+	<field name="billingDate" class="java.lang.String">
+		<fieldDescription><![CDATA[請求年月]]></fieldDescription>
+	</field>
+	<field name="contractPower" class="java.lang.String">
+		<fieldDescription><![CDATA[契約電力]]></fieldDescription>
+	</field>
+	<field name="contractType" class="java.lang.String">
+		<fieldDescription><![CDATA[契約種別]]></fieldDescription>
+	</field>
+	<field name="customerNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[お客様番号]]></fieldDescription>
+	</field>
+	<field name="dateOfIssuance" class="java.lang.String">
+		<fieldDescription><![CDATA[発行年月日]]></fieldDescription>
+	</field>
+	<field name="demandAddress" class="java.lang.String">
+		<fieldDescription><![CDATA[需要先住所]]></fieldDescription>
+	</field>
+	<field name="demandDestinationBillApartmentName" class="java.lang.String">
+		<fieldDescription><![CDATA[需要先ビル・マンション名]]></fieldDescription>
+	</field>
+	<field name="demandDestinationName" class="java.lang.String">
+		<fieldDescription><![CDATA[需要先名]]></fieldDescription>
+	</field>
+	<field name="demandLocationPlantName" class="java.lang.String">
+		<fieldDescription><![CDATA[需要場所事業場名]]></fieldDescription>
+	</field>
+	<field name="fee" class="java.lang.String">
+		<fieldDescription><![CDATA[料金]]></fieldDescription>
+	</field>
+	<field name="fuelCostAdjustmentAmountTheMonth_1" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[燃料費調整額_当月1]]></fieldDescription>
+	</field>
+	<field name="fuelCostAdjustmentAmountTheNextMonth_1" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[燃料費調整額_翌月1]]></fieldDescription>
+	</field>
+	<field name="itemName" class="java.lang.String">
+		<fieldDescription><![CDATA[項目名]]></fieldDescription>
+	</field>
+	<field name="maximumDemandYears_1" class="java.lang.String">
+		<fieldDescription><![CDATA[最大需要年月１]]></fieldDescription>
+	</field>
+	<field name="maximumDemandPower_1" class="java.lang.String">
+		<fieldDescription><![CDATA[最大需要電力１]]></fieldDescription>
+	</field>
+	<field name="maximumDemandPower_10" class="java.lang.String">
+		<fieldDescription><![CDATA[最大需要電力１０]]></fieldDescription>
+	</field>
+	<field name="maximumDemandPower_11" class="java.lang.String">
+		<fieldDescription><![CDATA[最大需要電力１１]]></fieldDescription>
+	</field>
+	<field name="maximumDemandPower_12" class="java.lang.String">
+		<fieldDescription><![CDATA[最大需要電力１２]]></fieldDescription>
+	</field>
+	<field name="maximumDemandPower_2" class="java.lang.String">
+		<fieldDescription><![CDATA[最大需要電力２]]></fieldDescription>
+	</field>
+	<field name="maximumDemandPower_3" class="java.lang.String">
+		<fieldDescription><![CDATA[最大需要電力3]]></fieldDescription>
+	</field>
+	<field name="maximumDemandPower_6" class="java.lang.String">
+		<fieldDescription><![CDATA[最大需要電力6]]></fieldDescription>
+	</field>
+	<field name="maximumDemandPower_4" class="java.lang.String">
+		<fieldDescription><![CDATA[最大需要電力４]]></fieldDescription>
+	</field>
+	<field name="maximumDemandPower_5" class="java.lang.String">
+		<fieldDescription><![CDATA[最大需要電力５]]></fieldDescription>
+	</field>
+	<field name="maximumDemandPower_7" class="java.lang.String">
+		<fieldDescription><![CDATA[最大需要電力７]]></fieldDescription>
+	</field>
+	<field name="maximumDemandPower_8" class="java.lang.String">
+		<fieldDescription><![CDATA[最大需要電力８]]></fieldDescription>
+	</field>
+	<field name="maximumDemandPower_9" class="java.lang.String">
+		<fieldDescription><![CDATA[最大需要電力９]]></fieldDescription>
+	</field>
+	<field name="maximumDemandYears_10" class="java.lang.String">
+		<fieldDescription><![CDATA[最大需要年月１０]]></fieldDescription>
+	</field>
+	<field name="maximumDemandYears_11" class="java.lang.String">
+		<fieldDescription><![CDATA[最大需要年月１１]]></fieldDescription>
+	</field>
+	<field name="maximumDemandYears_12" class="java.lang.String">
+		<fieldDescription><![CDATA[最大需要年月１２]]></fieldDescription>
+	</field>
+	<field name="maximumDemandYears_2" class="java.lang.String">
+		<fieldDescription><![CDATA[最大需要年月２]]></fieldDescription>
+	</field>
+	<field name="maximumDemandYears_3" class="java.lang.String">
+		<fieldDescription><![CDATA[最大需要年月3]]></fieldDescription>
+	</field>
+	<field name="maximumDemandYears_6" class="java.lang.String">
+		<fieldDescription><![CDATA[最大需要年月6]]></fieldDescription>
+	</field>
+	<field name="maximumDemandYears_4" class="java.lang.String">
+		<fieldDescription><![CDATA[最大需要年月４]]></fieldDescription>
+	</field>
+	<field name="maximumDemandYears_5" class="java.lang.String">
+		<fieldDescription><![CDATA[最大需要年月５]]></fieldDescription>
+	</field>
+	<field name="maximumDemandYears_7" class="java.lang.String">
+		<fieldDescription><![CDATA[最大需要年月７]]></fieldDescription>
+	</field>
+	<field name="maximumDemandYears_8" class="java.lang.String">
+		<fieldDescription><![CDATA[最大需要年月８]]></fieldDescription>
+	</field>
+	<field name="maximumDemandYears_9" class="java.lang.String">
+		<fieldDescription><![CDATA[最大需要年月９]]></fieldDescription>
+	</field>
+	<field name="monthEffectiveAmountOfPower" class="java.lang.String">
+		<fieldDescription><![CDATA[当月有効電力量]]></fieldDescription>
+	</field>
+	<field name="monthEffectiveInstructionNumberMainLine" class="java.lang.String">
+		<fieldDescription><![CDATA[当月有効指示数（本線）]]></fieldDescription>
+	</field>
+	<field name="monthEffectiveInstructionNumberSpareLine" class="java.lang.String">
+		<fieldDescription><![CDATA[当月有効指示数（予備線）]]></fieldDescription>
+	</field>
+	<field name="monthFullTimeInstructionNumberMainLine" class="java.lang.String">
+		<fieldDescription><![CDATA[当月全日指示数（本線）]]></fieldDescription>
+	</field>
+	<field name="monthFullTimeInstructionNumberSpareLine" class="java.lang.String">
+		<fieldDescription><![CDATA[当月全日指示数（予備線）]]></fieldDescription>
+	</field>
+	<field name="monthInvalidInstructionNumberMainLine" class="java.lang.String">
+		<fieldDescription><![CDATA[当月無効指示数（本線）]]></fieldDescription>
+	</field>
+	<field name="monthInvalidInstructionNumberSpareLine" class="java.lang.String">
+		<fieldDescription><![CDATA[当月無効指示数（予備線）]]></fieldDescription>
+	</field>
+	<field name="monthMaximumDemandPower" class="java.lang.String">
+		<fieldDescription><![CDATA[当月最大需要電力]]></fieldDescription>
+	</field>
+	<field name="monthMultiplyingFactor" class="java.lang.String">
+		<fieldDescription><![CDATA[当月乗率]]></fieldDescription>
+	</field>
+	<field name="monthReactiveEnergy" class="java.lang.String">
+		<fieldDescription><![CDATA[当月無効電力量]]></fieldDescription>
+	</field>
+	<field name="periodOfUseOptimal" class="java.lang.String">
+		<fieldDescription><![CDATA[使用期間（至）]]></fieldDescription>
+	</field>
+	<field name="periodOfUseSelf" class="java.lang.String">
+		<fieldDescription><![CDATA[使用期間（自）]]></fieldDescription>
+	</field>
+	<field name="powerFactor" class="java.lang.String">
+		<fieldDescription><![CDATA[力率]]></fieldDescription>
+	</field>
+	<field name="previousMonthFuelCostAdjustmentAmount" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[燃料費調整額_前月]]></fieldDescription>
+	</field>
+	<field name="renewableEnergyPowerGenerationPromotionLevyTheMonth" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[再エネ発電促進賦課金_当月]]></fieldDescription>
+	</field>
+	<field name="supplyPointSpecificNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[供給地点特定番号]]></fieldDescription>
+	</field>
+	<field name="taxEquivalent" class="java.lang.String">
+		<fieldDescription><![CDATA[消費税相当額]]></fieldDescription>
+	</field>
+	<field name="thePreviousMonthFullTimeInstructionNumberMainLine" class="java.lang.String">
+		<fieldDescription><![CDATA[前月全日指示数（本線）]]></fieldDescription>
+	</field>
+	<field name="thePreviousMonthFullTimeInstructionNumberSpareLine" class="java.lang.String">
+		<fieldDescription><![CDATA[前月全日指示数（予備線）]]></fieldDescription>
+	</field>
+	<field name="thePreviousMonthInvalidInstructionNumberMainLine" class="java.lang.String">
+		<fieldDescription><![CDATA[前月無効指示数（本線）]]></fieldDescription>
+	</field>
+	<field name="thePreviousMonthInvalidInstructionNumberSpareLine" class="java.lang.String">
+		<fieldDescription><![CDATA[前月無効指示数（予備線）]]></fieldDescription>
+	</field>
+	<field name="thePreviousMonthMultiplyingFactor" class="java.lang.String">
+		<fieldDescription><![CDATA[前月乗率]]></fieldDescription>
+	</field>
+	<field name="thePreviousMonthTheEffectiveInstructionNumberMainLine" class="java.lang.String">
+		<fieldDescription><![CDATA[前月有効指示数（本線）]]></fieldDescription>
+	</field>
+	<field name="thePreviousMonthTheEffectiveInstructionNumberSpareLine" class="java.lang.String">
+		<fieldDescription><![CDATA[前月有効指示数（予備線）]]></fieldDescription>
+	</field>
+	<field name="theTotalAmountOfElectricPowerUsed" class="java.lang.String">
+		<fieldDescription><![CDATA[使用電力量合計]]></fieldDescription>
+	</field>
+	<field name="unitPrice" class="java.lang.String">
+		<fieldDescription><![CDATA[単価]]></fieldDescription>
+	</field>
+	<field name="unitPriceUnit" class="java.lang.String">
+		<fieldDescription><![CDATA[単価単位]]></fieldDescription>
+	</field>
+	<field name="usageUnit" class="java.lang.String">
+		<fieldDescription><![CDATA[使用量単位]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="48" splitType="Stretch">
+			<image>
+				<reportElement x="412" y="22" width="143" height="26" uuid="b82f361d-2492-43de-90db-9ef0ab61aced"/>
+				<imageExpression><![CDATA["/images/heading.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="390" y="0" width="60" height="15" uuid="f5dc064c-d54a-4c4c-bcf6-bbc6d1391a1d"/>
+				<text><![CDATA[発行年月日]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="450" y="0" width="94" height="15" uuid="58604d05-ab7a-44f9-b772-1abd666d20e0"/>
+				<textFieldExpression><![CDATA[$F{dateOfIssuance}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="200" height="22" uuid="9a86011f-0441-44b5-b431-d108f8624145"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{billingDate}+"　発行年月日"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="0" width="90" height="15" uuid="cd1e6cfe-6d72-4c79-bd7f-6c8c3e6edc76"/>
+				<textFieldExpression><![CDATA[$F{billableNumberOfBases}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="18" splitType="Stretch"/>
+	</pageHeader>
+	<detail>
+		<band height="553" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="8ec30491-ddbd-43c3-9993-0b1b499366cc"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ご契約内容]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="200" width="230" height="20" uuid="162b4a77-d8a7-455a-89c2-6865176aad42"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[使用電力量と当月最大需要電力]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="30" width="194" height="20" uuid="1174fe0b-86ae-4d26-8e76-2875ad6258a0">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[最大需要電力(kW)履歴]]></text>
+			</staticText>
+			<frame>
+				<reportElement key="frmAnnIndicationNo" x="0" y="339" width="350" height="159" uuid="af18cad0-e720-4c76-9ce1-0e2ab44a5fe4">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.grid.JSSGridBagLayout"/>
+					<property name="com.jaspersoft.studio.element.name" value="frmAnnIndicationNo"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="0" width="39" height="23" backcolor="#DCE6F1" uuid="f2bcb0a8-7355-4317-abad-da4a803a0c74">
+						<property name="com.jaspersoft.layout.grid.x" value="0"/>
+						<property name="com.jaspersoft.layout.grid.y" value="0"/>
+						<property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="39" y="0" width="156" height="23" backcolor="#DCE6F1" uuid="9fa60800-7747-4d44-9d16-36b70dd407aa">
+						<property name="com.jaspersoft.layout.grid.x" value="1"/>
+						<property name="com.jaspersoft.layout.grid.y" value="0"/>
+						<property name="com.jaspersoft.layout.grid.weight.x" value="4.0"/>
+						<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[当月(本線/予備線)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="195" y="0" width="155" height="23" backcolor="#DCE6F1" uuid="42d8044c-2d08-4693-9896-e72fca0a7340">
+						<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+						<property name="com.jaspersoft.layout.grid.y" value="-1"/>
+						<property name="com.jaspersoft.layout.grid.weight.x" value="4.0"/>
+						<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[前月(本線/予備線)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="23" width="39" height="23" backcolor="#DCE6F1" uuid="4409e678-4b3d-4216-89d7-fc3b7070dd67">
+						<property name="com.jaspersoft.layout.grid.x" value="0"/>
+						<property name="com.jaspersoft.layout.grid.y" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[全日]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="39" y="23" width="156" height="23" uuid="0a2f1048-ae73-4bdb-aa5f-43040bf0c1fe">
+						<property name="com.jaspersoft.layout.grid.x" value="1"/>
+						<property name="com.jaspersoft.layout.grid.y" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.x" value="4.0"/>
+						<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{monthFullTimeInstructionNumberMainLine}+"/"+$F{monthFullTimeInstructionNumberSpareLine}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="195" y="23" width="155" height="23" uuid="a746c8be-cea8-4509-bd7c-6052eb7f4176">
+						<property name="com.jaspersoft.layout.grid.x" value="2"/>
+						<property name="com.jaspersoft.layout.grid.y" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.x" value="4.0"/>
+						<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{thePreviousMonthFullTimeInstructionNumberMainLine}+"/"+$F{thePreviousMonthFullTimeInstructionNumberSpareLine}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="195" y="46" width="155" height="23" uuid="b78d71a4-b249-44af-ad07-fa6feb7f5c21">
+						<property name="com.jaspersoft.layout.grid.x" value="2"/>
+						<property name="com.jaspersoft.layout.grid.y" value="2"/>
+						<property name="com.jaspersoft.layout.grid.weight.x" value="4.0"/>
+						<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{thePreviousMonthTheEffectiveInstructionNumberMainLine}+"/"+$F{thePreviousMonthTheEffectiveInstructionNumberSpareLine}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="39" y="46" width="156" height="23" uuid="dec9ecc2-c479-4405-8fd5-b576f6aad09c">
+						<property name="com.jaspersoft.layout.grid.x" value="1"/>
+						<property name="com.jaspersoft.layout.grid.y" value="2"/>
+						<property name="com.jaspersoft.layout.grid.weight.x" value="4.0"/>
+						<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{monthEffectiveInstructionNumberMainLine}+"/"+$F{monthEffectiveInstructionNumberSpareLine}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="46" width="39" height="23" backcolor="#DCE6F1" uuid="6139e34e-7340-411a-bd12-ea56431c4651">
+						<property name="com.jaspersoft.layout.grid.x" value="0"/>
+						<property name="com.jaspersoft.layout.grid.y" value="2"/>
+						<property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[有効]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="39" y="69" width="156" height="23" uuid="4afff122-ec65-4fd5-a594-7767db1e764e">
+						<property name="com.jaspersoft.layout.grid.x" value="1"/>
+						<property name="com.jaspersoft.layout.grid.y" value="3"/>
+						<property name="com.jaspersoft.layout.grid.weight.x" value="4.0"/>
+						<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{monthInvalidInstructionNumberMainLine}+"/"+$F{monthInvalidInstructionNumberSpareLine}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="195" y="69" width="155" height="23" uuid="e7d3e3b6-0eb9-4bac-863f-44fd7c3fb108">
+						<property name="com.jaspersoft.layout.grid.x" value="2"/>
+						<property name="com.jaspersoft.layout.grid.y" value="3"/>
+						<property name="com.jaspersoft.layout.grid.weight.x" value="4.0"/>
+						<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{thePreviousMonthInvalidInstructionNumberMainLine}+"/"+$F{thePreviousMonthInvalidInstructionNumberSpareLine}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="69" width="39" height="23" backcolor="#DCE6F1" uuid="6a6b456b-b73e-44de-b63c-1dda4165d304">
+						<property name="com.jaspersoft.layout.grid.x" value="0"/>
+						<property name="com.jaspersoft.layout.grid.y" value="3"/>
+						<property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[無効]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="92" width="39" height="22" backcolor="#DCE6F1" uuid="6caae123-c363-44e6-8b95-e8a6e1fb9d15">
+						<property name="com.jaspersoft.layout.grid.x" value="0"/>
+						<property name="com.jaspersoft.layout.grid.y" value="4"/>
+						<property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[乗率]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="195" y="92" width="155" height="22" uuid="5f082267-e0e2-4344-abd8-05533d4cafc4">
+						<property name="com.jaspersoft.layout.grid.x" value="2"/>
+						<property name="com.jaspersoft.layout.grid.y" value="4"/>
+						<property name="com.jaspersoft.layout.grid.weight.x" value="4.0"/>
+						<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{thePreviousMonthMultiplyingFactor}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="39" y="92" width="156" height="22" uuid="881d102d-6e35-4aae-be63-438e538e28b3">
+						<property name="com.jaspersoft.layout.grid.x" value="1"/>
+						<property name="com.jaspersoft.layout.grid.y" value="4"/>
+						<property name="com.jaspersoft.layout.grid.weight.x" value="4.0"/>
+						<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{monthMultiplyingFactor}]]></textFieldExpression>
+				</textField>
+				<frame>
+					<reportElement x="0" y="114" width="350" height="45" uuid="0cc12df9-e670-4e0e-9bbe-26b6fd0c583f">
+						<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.grid.JSSGridBagLayout"/>
+						<property name="com.jaspersoft.layout.grid.x" value="0"/>
+						<property name="com.jaspersoft.layout.grid.y" value="5"/>
+						<property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.weight.y" value="2.0"/>
+						<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.colspan" value="3"/>
+						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<staticText>
+						<reportElement mode="Opaque" x="0" y="0" width="105" height="23" backcolor="#DCE6F1" uuid="a1f9a1d8-196a-4bd1-bbc2-1fbac06f03ec">
+							<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+							<property name="com.jaspersoft.layout.grid.y" value="0"/>
+							<property name="com.jaspersoft.layout.grid.weight.x" value="3.0"/>
+							<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+							<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+							<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+							<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle"/>
+						<text><![CDATA[当月有効電力量]]></text>
+					</staticText>
+					<textField>
+						<reportElement x="105" y="0" width="245" height="23" uuid="139ad4fa-31e6-4536-bb8f-cab2f9db071b">
+							<property name="com.jaspersoft.layout.grid.x" value="1"/>
+							<property name="com.jaspersoft.layout.grid.y" value="0"/>
+							<property name="com.jaspersoft.layout.grid.weight.x" value="7.0"/>
+							<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+							<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+							<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+							<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+						</reportElement>
+						<box>
+							<bottomPen lineWidth="1.0"/>
+							<rightPen lineWidth="1.0"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle"/>
+						<textFieldExpression><![CDATA[$F{monthEffectiveAmountOfPower}+"　kWh"]]></textFieldExpression>
+					</textField>
+					<staticText>
+						<reportElement mode="Opaque" x="0" y="23" width="105" height="22" backcolor="#DCE6F1" uuid="c201f38e-2831-4632-b745-0ae01b96cdbb">
+							<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+							<property name="com.jaspersoft.layout.grid.y" value="1"/>
+							<property name="com.jaspersoft.layout.grid.weight.x" value="3.0"/>
+							<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+							<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+							<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+							<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle"/>
+						<text><![CDATA[当月無効電力量]]></text>
+					</staticText>
+					<textField>
+						<reportElement x="105" y="23" width="245" height="22" uuid="b7681550-eeab-4dff-8ff1-cad27925b6e0">
+							<property name="com.jaspersoft.layout.grid.x" value="1"/>
+							<property name="com.jaspersoft.layout.grid.y" value="1"/>
+							<property name="com.jaspersoft.layout.grid.weight.x" value="7.0"/>
+							<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+							<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+							<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+							<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+						</reportElement>
+						<box>
+							<bottomPen lineWidth="1.0"/>
+							<rightPen lineWidth="1.0"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle"/>
+						<textFieldExpression><![CDATA[$F{monthReactiveEnergy}+"　kVarh"]]></textFieldExpression>
+					</textField>
+				</frame>
+			</frame>
+			<frame>
+				<reportElement key="frmMaxDemandPowerHistory" x="360" y="50" width="194" height="240" uuid="8a9a197e-0342-4da3-ad15-6f89b46670b5">
+					<property name="com.jaspersoft.studio.element.name" value="frmMaxDemandPowerHistory"/>
+				</reportElement>
+				<textField>
+					<reportElement x="90" y="60" width="104" height="20" uuid="8b69d6ef-8ea0-4999-ad7b-f0e63bda0cc6"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{maximumDemandPower_4}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="160" width="90" height="20" backcolor="#DCE6F1" uuid="ef71af2b-692e-43bb-bc2a-cf4476664808"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{maximumDemandYears_9}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="90" y="80" width="104" height="20" uuid="c5e2e790-68bd-4cc6-b2ec-8e3bfe961e53"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{maximumDemandPower_5}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="180" width="90" height="20" backcolor="#DCE6F1" uuid="f51858e9-2b91-4b88-9456-323540685cfd"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{maximumDemandYears_10}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="0" width="90" height="20" backcolor="#DCE6F1" uuid="527e7fb8-a5f2-4184-a9e2-cec9cf88243f"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{maximumDemandYears_1}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="90" y="120" width="104" height="20" uuid="22e286bf-5f84-4e2c-9dd7-38105877f0f1"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{maximumDemandPower_7}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="120" width="90" height="20" backcolor="#DCE6F1" uuid="c5d8348b-d625-4527-a1c5-6d31f6483612"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{maximumDemandYears_7}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="90" y="100" width="104" height="20" uuid="8d7e04a9-d255-46e0-a6de-c6e098f95933"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{maximumDemandPower_6}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="90" y="180" width="104" height="20" uuid="ad5b806e-db8a-422b-bffa-c4f1035e91ef"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{maximumDemandPower_10}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="40" width="90" height="20" backcolor="#DCE6F1" uuid="39451279-5353-4221-b5a4-cc085fb2541c"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{maximumDemandYears_3}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="90" y="20" width="104" height="20" uuid="c5843a9d-b382-4035-8b0e-a0f7fa7cbcc1"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{maximumDemandPower_2}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="140" width="90" height="20" backcolor="#DCE6F1" uuid="e9913678-fa47-49cf-929a-1a45ab9c73d8"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{maximumDemandYears_8}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="80" width="90" height="20" backcolor="#DCE6F1" uuid="24cff2c9-ab51-42a2-813e-ef5f696abcde"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{maximumDemandYears_5}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="90" y="40" width="104" height="20" uuid="3b2ffe02-1d97-4d98-bc3f-b92ea80d6a5d"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{maximumDemandPower_3}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="90" y="140" width="104" height="20" uuid="85c4edb1-fb11-422f-a54c-0a593ad167b9"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{maximumDemandPower_8}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="100" width="90" height="20" backcolor="#DCE6F1" uuid="0ca2d3cf-d7ff-4692-ad29-06e59dc1d52c"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{maximumDemandYears_6}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="90" y="0" width="104" height="20" uuid="a2bcb2bf-fc69-41bb-a677-e5c7709b9228"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{maximumDemandPower_1}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="90" y="200" width="104" height="20" uuid="6489b759-7266-4f81-ac39-6beaa89662b2"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{maximumDemandPower_11}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="200" width="90" height="20" backcolor="#DCE6F1" uuid="a20c090b-f8eb-41bc-8b36-a589d7eb5d06"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{maximumDemandYears_11}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="90" y="160" width="104" height="20" uuid="6cdbf4cc-4eeb-4eaf-a5ca-bf9843194987"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{maximumDemandPower_9}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="90" y="220" width="104" height="20" uuid="f725bac2-fbd9-4f5a-9887-efa2738de462">
+						<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<paragraph leftIndent="0"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{maximumDemandPower_12}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="20" width="90" height="20" backcolor="#DCE6F1" uuid="552f1584-6ad2-4d90-90ba-9372a2e7fed9"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{maximumDemandYears_2}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="60" width="90" height="20" backcolor="#DCE6F1" uuid="1cadb4d9-206e-4a4b-82f8-02f794545e1e"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{maximumDemandYears_4}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="220" width="90" height="20" backcolor="#DCE6F1" uuid="13e20d04-8912-4a1f-9c51-7e96d2f1e2c8"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{maximumDemandYears_12}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement key="frmSubscription" isPrintRepeatedValues="false" x="0" y="30" width="350" height="160" uuid="ad381fd5-5c2f-4359-9776-582e41a95950">
+					<property name="com.jaspersoft.studio.element.name" value="frmSubscription"/>
+				</reportElement>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="0" width="110" height="20" backcolor="#DCE6F1" uuid="a3747e2a-04cc-4423-a20d-6757ed7950c6"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[お客さま番号]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="110" y="0" width="240" height="20" uuid="5123eec7-c46a-482d-b3dc-37fb778d2bf4"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{customerNumber}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="20" width="110" height="20" backcolor="#DCE6F1" uuid="76463a71-2584-4e57-b0e2-652f529dcfaa"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[供給地点特定番号]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="110" y="20" width="240" height="20" uuid="51c90f3e-6a60-47ed-9e8a-01b7843c9611"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{supplyPointSpecificNumber}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="60" width="110" height="20" backcolor="#DCE6F1" uuid="f0eec344-ce1a-4ceb-9481-bcad2bc10020"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="110" y="60" width="240" height="20" uuid="6a90d203-43b5-40ed-ad5f-2733bb9c8d1a"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{demandDestinationName}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="40" width="110" height="20" backcolor="#DCE6F1" uuid="0a2f9c2d-3b46-4f7a-8d93-e605dfbd0cf9"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[需要先名称]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="110" y="40" width="240" height="20" uuid="ecb02bd4-d1be-4d4d-834d-488ad1acbb36"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{demandLocationPlantName}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="140" width="110" height="20" backcolor="#DCE6F1" uuid="93dfb218-4c68-4c11-a742-59c1651ad275"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[契約電力(kW)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="100" width="110" height="20" backcolor="#DCE6F1" uuid="ab950597-305a-44e0-b66f-08b4ade00e02"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="110" y="120" width="240" height="20" uuid="00c022a5-2dec-415d-aea9-54e04b52150b"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{demandAddress}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="110" y="100" width="240" height="20" uuid="0b658e13-1f22-4310-b7a6-0aaaaeeacb44"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{demandDestinationBillApartmentName}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="110" y="140" width="240" height="20" uuid="f1b0586c-d715-45ff-8e64-e00f7b202b51"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{contractType}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="80" width="110" height="20" backcolor="#DCE6F1" uuid="fff089c0-0a66-4225-bdeb-56a00df4ddb0"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[需要先住所]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="120" width="110" height="20" backcolor="#DCE6F1" uuid="c82975b1-6b3d-4195-852f-b72502614e80"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[契約種別]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="110" y="80" width="240" height="20" uuid="abe28db5-866c-4ab5-9f6a-4c7dc9a300fa"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{contractPower}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement key="frmPowerConsumption" x="0" y="230" width="350" height="60" uuid="e569e986-400f-425a-8518-9103a33d883b">
+					<property name="com.jaspersoft.studio.element.name" value="frmPowerConsumption"/>
+				</reportElement>
+				<textField>
+					<reportElement x="110" y="20" width="100" height="20" uuid="ab747731-1fe7-4407-8533-d208ce134c16"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{theTotalAmountOfElectricPowerUsed} + " kWh"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="40" width="110" height="20" backcolor="#DCE6F1" uuid="b7dc225e-c535-46be-b89c-eebaa278d50a"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[当月最大需要電力]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="20" width="110" height="20" backcolor="#DCE6F1" uuid="9fb16552-9bad-41ae-b102-a16bd1e901ea"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[使用電力量合計]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="110" y="40" width="240" height="20" uuid="f217290b-bda4-42bd-897e-12c518392210"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{monthMaximumDemandPower}+" kW"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="110" y="0" width="240" height="20" uuid="88d96554-f996-4353-a54b-d6900a36ee58"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{periodOfUseSelf}+" ～ "+$F{periodOfUseOptimal}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="0" width="110" height="20" backcolor="#DCE6F1" uuid="68336227-dd5f-4e5a-b8b3-15cf623fa7a6"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font fontName="Serif" size="12" pdfEncoding=""/>
+					</textElement>
+					<text><![CDATA[ご使用期間
+]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="210" y="20" width="50" height="20" backcolor="#DCE6F1" uuid="335c09a1-c147-4933-bb35-8e9f5614f998"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[力率]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="260" y="20" width="90" height="20" uuid="bd5fd94a-c13d-44a4-ac0e-e0527b558c9a"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{powerFactor}+" %"]]></textFieldExpression>
+				</textField>
+			</frame>
+			<staticText>
+				<reportElement x="0" y="310" width="139" height="20" uuid="16bc2af4-c083-417a-a287-9ba2b30ce24d"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[指示数のお知らせ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="310" width="194" height="20" uuid="d42b1e4b-c838-4e50-b57c-f76e77ff5440"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[燃料費調整額のお知らせ]]></text>
+			</staticText>
+			<frame>
+				<reportElement key="frmAnnFuelCost" isPrintRepeatedValues="false" x="360" y="339" width="194" height="71" uuid="c5f6df51-00c5-428e-b8b4-641796819b3a">
+					<property name="com.jaspersoft.studio.element.name" value="frmAnnFuelCost"/>
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.grid.JSSGridBagLayout"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="0" width="49" height="24" backcolor="#DCE6F1" uuid="14434c0e-0f68-4297-aba1-0466e28fe35f">
+						<property name="com.jaspersoft.layout.grid.x" value="0"/>
+						<property name="com.jaspersoft.layout.grid.y" value="0"/>
+						<property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[前月]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="49" y="0" width="145" height="24" uuid="5621fc04-3f43-4be5-bf60-4e35d2478647">
+						<property name="com.jaspersoft.layout.grid.x" value="1"/>
+						<property name="com.jaspersoft.layout.grid.y" value="0"/>
+						<property name="com.jaspersoft.layout.grid.weight.x" value="3.0"/>
+						<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[($F{previousMonthFuelCostAdjustmentAmount}==null || BigDecimal.ZERO.equals($F{previousMonthFuelCostAdjustmentAmount}))? 0 : "▲" + $F{previousMonthFuelCostAdjustmentAmount}.toString()+"円／kWh"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="24" width="49" height="24" backcolor="#DCE6F1" uuid="6e225bfb-3cb6-4412-aab5-c7dea9c3b9ba">
+						<property name="com.jaspersoft.layout.grid.x" value="0"/>
+						<property name="com.jaspersoft.layout.grid.y" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[当月]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="49" y="24" width="145" height="24" uuid="15dbc8cb-1596-4632-b82e-aa997f5aa447">
+						<property name="com.jaspersoft.layout.grid.x" value="1"/>
+						<property name="com.jaspersoft.layout.grid.y" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.x" value="3.0"/>
+						<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[($F{fuelCostAdjustmentAmountTheMonth_1}==null || BigDecimal.ZERO.equals($F{fuelCostAdjustmentAmountTheMonth_1}))? 0 : "▲" + $F{fuelCostAdjustmentAmountTheMonth_1}.toString()+"円／kWh"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="49" y="48" width="145" height="23" uuid="fa59c418-93f9-454b-887c-aecf3f8f0299">
+						<property name="com.jaspersoft.layout.grid.x" value="1"/>
+						<property name="com.jaspersoft.layout.grid.y" value="2"/>
+						<property name="com.jaspersoft.layout.grid.weight.x" value="3.0"/>
+						<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[($F{fuelCostAdjustmentAmountTheNextMonth_1}==null || BigDecimal.ZERO.equals($F{fuelCostAdjustmentAmountTheNextMonth_1}))? 0 : "▲" + $F{fuelCostAdjustmentAmountTheNextMonth_1}.toString()+"円／kWh"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="48" width="49" height="23" backcolor="#DCE6F1" uuid="b9501400-ac88-46e0-b22f-4264bb8632a8">
+						<property name="com.jaspersoft.layout.grid.x" value="0"/>
+						<property name="com.jaspersoft.layout.grid.y" value="2"/>
+						<property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[翌月]]></text>
+				</staticText>
+			</frame>
+			<staticText>
+				<reportElement x="360" y="428" width="194" height="20" uuid="c5995c5f-62f7-49eb-a8fc-90b620120163"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[再エネ発電促進賦課金のお知らせ]]></text>
+			</staticText>
+			<frame>
+				<reportElement key="frmPowerLevy" isPrintRepeatedValues="false" x="360" y="453" width="194" height="23" uuid="e2a090e9-c175-46aa-a9da-91f9d6742369">
+					<property name="com.jaspersoft.studio.element.name" value="frmPowerLevy"/>
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.grid.JSSGridBagLayout"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="0" width="49" height="23" backcolor="#DCE6F1" uuid="e76e0abd-c20a-4724-8731-c70070f681ca">
+						<property name="com.jaspersoft.layout.grid.x" value="0"/>
+						<property name="com.jaspersoft.layout.grid.y" value="0"/>
+						<property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[前月]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="49" y="0" width="145" height="23" uuid="c044d569-36ee-4605-b71f-ad5d4ad039c0">
+						<property name="com.jaspersoft.layout.grid.x" value="1"/>
+						<property name="com.jaspersoft.layout.grid.y" value="0"/>
+						<property name="com.jaspersoft.layout.grid.weight.x" value="3.0"/>
+						<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[($F{renewableEnergyPowerGenerationPromotionLevyTheMonth}==null || BigDecimal.ZERO.equals($F{renewableEnergyPowerGenerationPromotionLevyTheMonth}))? 0 : "▲" + $F{renewableEnergyPowerGenerationPromotionLevyTheMonth}.toString()+"円／kWh"]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="125" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PEB0011_HD" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6eb1f3c4-119d-43c2-8a7e-45d7d68912d9">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="HTBE_PAYMENT_METHOD" class="java.math.BigDecimal"/>
+	<parameter name="HTBE_PAYMENT_SERIAL" class="java.math.BigDecimal"/>
+	<parameter name="HTBE_PRESSURE_TYPE" class="java.lang.String">
+		<defaultValueExpression><![CDATA["HP"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="accountTypeYourDesignatedAccount" class="java.lang.String">
+		<fieldDescription><![CDATA[ご指定口座_口座種別]]></fieldDescription>
+	</field>
+	<field name="address_1" class="java.lang.String">
+		<fieldDescription><![CDATA[住所１]]></fieldDescription>
+	</field>
+	<field name="address_2" class="java.lang.String">
+		<fieldDescription><![CDATA[住所２]]></fieldDescription>
+	</field>
+	<field name="bankAccountAccountHolderKana" class="java.lang.String">
+		<fieldDescription><![CDATA[振込先口座_口座名義（カナ）]]></fieldDescription>
+	</field>
+	<field name="bankAccountAccountHolderKanji" class="java.lang.String">
+		<fieldDescription><![CDATA[振込先口座_口座名義（漢字）]]></fieldDescription>
+	</field>
+	<field name="bankAccountAccountNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[振込先口座_口座番号]]></fieldDescription>
+	</field>
+	<field name="bankAccountAccountType" class="java.lang.String">
+		<fieldDescription><![CDATA[振込先口座_口座種別]]></fieldDescription>
+	</field>
+	<field name="bankAccountBranchName" class="java.lang.String">
+		<fieldDescription><![CDATA[振込先口座_支店名]]></fieldDescription>
+	</field>
+	<field name="bankAccountFinancialInstitutionName" class="java.lang.String">
+		<fieldDescription><![CDATA[振込先口座_金融機関名]]></fieldDescription>
+	</field>
+	<field name="billableNumberOfBases" class="java.lang.String">
+		<fieldDescription><![CDATA[請求対象拠点数]]></fieldDescription>
+	</field>
+	<field name="billingAmount" class="java.lang.String">
+		<fieldDescription><![CDATA[請求金額]]></fieldDescription>
+	</field>
+	<field name="billingDate" class="java.lang.String">
+		<fieldDescription><![CDATA[請求年月]]></fieldDescription>
+	</field>
+	<field name="billingNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[請求先番号]]></fieldDescription>
+	</field>
+	<field name="branchNameYourDesignatedAccount" class="java.lang.String">
+		<fieldDescription><![CDATA[ご指定口座_支店名]]></fieldDescription>
+	</field>
+	<field name="building" class="java.lang.String">
+		<fieldDescription><![CDATA[棟]]></fieldDescription>
+	</field>
+	<field name="companyName" class="java.lang.String">
+		<fieldDescription><![CDATA[会社名]]></fieldDescription>
+	</field>
+	<field name="contactPersonName" class="java.lang.String">
+		<fieldDescription><![CDATA[担当者名]]></fieldDescription>
+	</field>
+	<field name="contractorCode" class="java.lang.String">
+		<fieldDescription><![CDATA[契約者コード]]></fieldDescription>
+	</field>
+	<field name="dateOfIssuance" class="java.lang.String">
+		<fieldDescription><![CDATA[発行年月日]]></fieldDescription>
+	</field>
+	<field name="district" class="java.lang.String">
+		<fieldDescription><![CDATA[丁目]]></fieldDescription>
+	</field>
+	<field name="dunningWording_1" class="java.lang.String">
+		<fieldDescription><![CDATA[督促状文言1]]></fieldDescription>
+	</field>
+	<field name="dunningWording_2" class="java.lang.String">
+		<fieldDescription><![CDATA[督促状文言2]]></fieldDescription>
+	</field>
+	<field name="dunningWording_3" class="java.lang.String">
+		<fieldDescription><![CDATA[督促状文言3]]></fieldDescription>
+	</field>
+	<field name="dunningWording_8" class="java.lang.String">
+		<fieldDescription><![CDATA[督促状文言8]]></fieldDescription>
+	</field>
+	<field name="dunningWording_9" class="java.lang.String">
+		<fieldDescription><![CDATA[督促状文言9]]></fieldDescription>
+	</field>
+	<field name="houseName" class="java.lang.String">
+		<fieldDescription><![CDATA[集合住宅名]]></fieldDescription>
+	</field>
+	<field name="houseNo" class="java.lang.String">
+		<fieldDescription><![CDATA[番号]]></fieldDescription>
+	</field>
+	<field name="issue" class="java.lang.String">
+		<fieldDescription><![CDATA[号]]></fieldDescription>
+	</field>
+	<field name="paymentDate" class="java.lang.String">
+		<fieldDescription><![CDATA[支払期日]]></fieldDescription>
+	</field>
+	<field name="paymentMethod" class="java.lang.String">
+		<fieldDescription><![CDATA[支払方法]]></fieldDescription>
+	</field>
+	<field name="pleaseSpecifyAccountAccountNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[ご指定口座_口座番号]]></fieldDescription>
+	</field>
+	<field name="pleaseSpecifyAccountFinancialInstitutionName" class="java.lang.String">
+		<fieldDescription><![CDATA[ご指定口座_金融機関名]]></fieldDescription>
+	</field>
+	<field name="postalCode" class="java.lang.String">
+		<fieldDescription><![CDATA[郵便番号]]></fieldDescription>
+	</field>
+	<field name="roomNo" class="java.lang.String">
+		<fieldDescription><![CDATA[部屋番号]]></fieldDescription>
+	</field>
+	<field name="title" class="java.lang.String">
+		<fieldDescription><![CDATA[タイトル]]></fieldDescription>
+	</field>
+	<field name="transferDate" class="java.lang.String">
+		<fieldDescription><![CDATA[振替予定日]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="288" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+			<frame>
+				<reportElement x="0" y="0" width="320" height="250" uuid="b17d7693-ebfb-4e93-b712-33da740e6e08">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+				</reportElement>
+				<textField>
+					<reportElement x="20" y="1" width="80" height="20" uuid="e21a36eb-f28b-495f-b90b-9de2e50b702b"/>
+					<textFieldExpression><![CDATA[$F{postalCode}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="20" y="52" width="250" height="20" uuid="9d8b1c50-33ae-4920-ab7d-59780584ba73"/>
+					<textFieldExpression><![CDATA[$F{houseName}+$F{building}+$F{roomNo}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="20" y="30" width="250" height="22" uuid="dee6d963-1c00-494c-a20d-c7181ef2d714"/>
+					<textFieldExpression><![CDATA[$F{address_1}+$F{address_2}+$F{issue}+$F{houseNo}+$F{district}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="22" y="112" width="148" height="21" uuid="2f0c9bfe-17aa-4552-b085-63ac7457c59a"/>
+					<textFieldExpression><![CDATA[$F{contactPersonName}+"様"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="22" y="89" width="148" height="21" uuid="f464cb64-c609-4446-95b5-94cac2594a5d"/>
+					<textFieldExpression><![CDATA[$F{companyName}+"様"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="22" y="134" width="148" height="21" uuid="b0a9e9e9-cd61-4298-bf2e-b13c620bfa03"/>
+					<textFieldExpression><![CDATA[$F{billingNumber}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement x="320" y="0" width="235" height="250" uuid="056a754d-3d9e-4198-b202-f3e1701a7349"/>
+				<image>
+					<reportElement x="125" y="30" width="100" height="105" uuid="10663188-7249-42a6-8f7f-32f1ff3d397d"/>
+					<imageExpression><![CDATA["/images/stamp.png"]]></imageExpression>
+				</image>
+				<image>
+					<reportElement x="66" y="80" width="110" height="20" uuid="11fe5e73-f8c3-437a-a2c5-e401c091b8df"/>
+					<imageExpression><![CDATA["/images/heading.png"]]></imageExpression>
+				</image>
+				<textField>
+					<reportElement x="133" y="1" width="100" height="20" uuid="5f561927-602e-410d-b02a-c3b71f9f8209"/>
+					<textFieldExpression><![CDATA[$F{dateOfIssuance}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="68" y="108" width="166" height="120" uuid="cc5db276-e668-4814-a331-a4ead9b5b5b8"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[本社住所
+〒859-3243
+長崎県佐世保市ハウステンボス町1-1
+
+福岡オフィス
+〒810-0001
+福岡市中央区天神3-9-25
+
+お客様センター
+TEL:050-3852-1193
+]]></text>
+				</staticText>
+			</frame>
+			<textField>
+				<reportElement x="168" y="260" width="218" height="22" uuid="266c64de-8d67-4d18-98ff-ff9633fbc0bf"/>
+				<box>
+					<topPen lineWidth="2.0"/>
+					<leftPen lineWidth="2.0"/>
+					<bottomPen lineWidth="2.0"/>
+					<rightPen lineWidth="2.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{title}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="269" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="278" height="20" uuid="2d476fb6-1d1e-4a45-b63c-bce7500ff8bd"/>
+				<textFieldExpression><![CDATA[$F{dunningWording_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="20" width="277" height="20" uuid="d6779689-7724-4587-a68d-ae93c1a417a4"/>
+				<textFieldExpression><![CDATA[$F{dunningWording_2}]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement x="0" y="50" width="555" height="30" uuid="6d5d0224-f4aa-4b64-8038-4864c7f8d746"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Double"/>
+					<topPen lineWidth="2.0" lineStyle="Double"/>
+					<leftPen lineWidth="2.0" lineStyle="Double"/>
+					<bottomPen lineWidth="2.0" lineStyle="Double"/>
+					<rightPen lineWidth="2.0" lineStyle="Double"/>
+				</box>
+				<staticText>
+					<reportElement x="0" y="0" width="110" height="30" uuid="ddd551c7-42ca-424d-ace9-c7f163ecddad"/>
+					<box>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[ご請求年月]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="220" y="0" width="119" height="30" uuid="75448961-af11-4be9-a6ee-209d3ebffcfb"/>
+					<box>
+						<pen lineWidth="1.0" lineStyle="Solid"/>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Double" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[ご請求金額  (税込)]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="340" y="0" width="214" height="30" uuid="04bb7ba9-7130-41e1-bdb0-a17c29986566"/>
+					<box>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{billingAmount}+"円"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="110" y="0" width="110" height="30" uuid="ab4252a7-ceab-438c-a7e5-6f6c35971086">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{billingDate}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement x="0" y="88" width="555" height="180" uuid="fd324fc7-e876-41d8-8b53-aa70e510bc64">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<frame>
+					<reportElement x="0" y="0" width="200" height="180" uuid="d33cd7b5-b8e7-49b1-aa6f-88604a0f8648"/>
+					<staticText>
+						<reportElement x="5" y="10" width="80" height="20" uuid="b4f43354-b779-418f-adb3-c82ae5d53782"/>
+						<text><![CDATA[お客さま番号    :]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="5" y="35" width="80" height="20" uuid="2ff30a24-2351-422d-a380-71561b5d18e8"/>
+						<text><![CDATA[お支払い期日    :]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="5" y="61" width="80" height="20" uuid="3d3aa053-7db1-4628-b552-218ff28c356f"/>
+						<text><![CDATA[お支払い方法    :]]></text>
+					</staticText>
+					<textField>
+						<reportElement x="86" y="10" width="108" height="20" uuid="93dc1f4b-eeae-4b37-bb67-c12b75459313"/>
+						<textFieldExpression><![CDATA[$F{contractorCode}]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement x="86" y="35" width="108" height="20" uuid="d2705f61-682a-4f3f-94ed-46097fcabb35"/>
+						<textFieldExpression><![CDATA[$F{paymentDate}]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement x="86" y="61" width="108" height="20" uuid="a5ba97d7-79a3-482e-a175-9047c61258ba"/>
+						<textFieldExpression><![CDATA[$F{paymentMethod}]]></textFieldExpression>
+					</textField>
+				</frame>
+				<frame>
+					<reportElement x="200" y="0" width="355" height="180" uuid="5d8892b3-22e4-461d-aa83-3206c709f92f"/>
+					<staticText>
+						<reportElement x="10" y="10" width="80" height="20" uuid="c327e126-5bc6-47a6-a4a3-92f5d28011e8">
+							<printWhenExpression><![CDATA["HP".equals($P{HTBE_PRESSURE_TYPE})]]></printWhenExpression>
+						</reportElement>
+						<text><![CDATA[ご契約拠点数  :]]></text>
+					</staticText>
+					<textField>
+						<reportElement x="91" y="10" width="168" height="20" uuid="31f97520-ed03-4c19-883d-dd1526800135">
+							<printWhenExpression><![CDATA["HP".equals($P{HTBE_PRESSURE_TYPE})]]></printWhenExpression>
+						</reportElement>
+						<textFieldExpression><![CDATA[$F{billableNumberOfBases}+"件"]]></textFieldExpression>
+					</textField>
+					<staticText>
+						<reportElement x="0" y="35" width="210" height="20" uuid="ac936182-3d10-4c00-bfd7-da183e23aa2d"/>
+						<text><![CDATA[（金融機関休業日の場合は翌営業日）]]></text>
+					</staticText>
+					<frame>
+						<reportElement key="frmBankAcc" isPrintRepeatedValues="false" x="0" y="55" width="345" height="114" isRemoveLineWhenBlank="true" uuid="19cacbac-7586-43e2-84d5-50cb1d3feee4">
+							<printWhenExpression><![CDATA[new BigDecimal(2).equals($P{HTBE_PAYMENT_METHOD}) && BigDecimal.ONE.equals($P{HTBE_PAYMENT_SERIAL})]]></printWhenExpression>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						</box>
+						<staticText>
+							<reportElement x="7" y="6" width="60" height="20" uuid="e6754b29-4a18-4926-b65b-2dfa946982d4"/>
+							<text><![CDATA[振込先口座]]></text>
+						</staticText>
+						<textField>
+							<reportElement x="153" y="31" width="68" height="20" uuid="2a327c7d-e456-41ee-86bd-07ef01c6e9bd"/>
+							<textFieldExpression><![CDATA[$F{bankAccountAccountType}]]></textFieldExpression>
+						</textField>
+						<staticText>
+							<reportElement x="79" y="6" width="70" height="20" uuid="8909333a-81a3-4d8c-86be-44cf985d5216"/>
+							<textElement textAlignment="Right"/>
+							<text><![CDATA[金融機関名  :]]></text>
+						</staticText>
+						<staticText>
+							<reportElement x="79" y="31" width="70" height="20" uuid="f3b3f56e-d676-464e-8ca1-feb04719dcb9"/>
+							<textElement textAlignment="Right"/>
+							<text><![CDATA[口座番号  :]]></text>
+						</staticText>
+						<textField>
+							<reportElement x="153" y="6" width="120" height="20" uuid="23e052fb-db27-4882-92b6-64db496813e2"/>
+							<textFieldExpression><![CDATA[$F{bankAccountFinancialInstitutionName}]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement x="274" y="6" width="68" height="20" uuid="aad77a77-4be5-4240-a1b9-bcb9af5e78a2"/>
+							<textFieldExpression><![CDATA[$F{bankAccountBranchName}]]></textFieldExpression>
+						</textField>
+						<staticText>
+							<reportElement x="79" y="56" width="70" height="20" uuid="6d3b76b8-85c7-45d9-bbeb-1ffa546b75a6"/>
+							<textElement textAlignment="Right"/>
+							<text><![CDATA[口座名義  :]]></text>
+						</staticText>
+						<textField>
+							<reportElement x="153" y="56" width="190" height="20" uuid="0c135874-260e-4512-a55c-71067ee1babe"/>
+							<textFieldExpression><![CDATA[$F{bankAccountAccountHolderKanji}]]></textFieldExpression>
+						</textField>
+						<staticText>
+							<reportElement x="79" y="82" width="70" height="20" uuid="bb7dd7df-db5f-4c9b-981f-8e844b3fcc57"/>
+							<textElement textAlignment="Right"/>
+							<text><![CDATA[(カナ)  :]]></text>
+						</staticText>
+						<textField>
+							<reportElement x="222" y="31" width="120" height="20" uuid="ec209be7-b367-417c-83d3-d7a7adabdc5e"/>
+							<textFieldExpression><![CDATA[$F{bankAccountAccountNumber}]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement x="153" y="82" width="190" height="20" uuid="decb8a71-5aa3-43d7-a2e4-c9b72ef6ac23"/>
+							<textFieldExpression><![CDATA[$F{bankAccountAccountHolderKana}]]></textFieldExpression>
+						</textField>
+					</frame>
+					<frame>
+						<reportElement key="frmSetBankAcc" isPrintRepeatedValues="false" x="0" y="55" width="345" height="114" isRemoveLineWhenBlank="true" uuid="19cacbac-7586-43e2-84d5-50cb1d3feee4">
+							<printWhenExpression><![CDATA[BigDecimal.ONE.equals($P{HTBE_PAYMENT_METHOD})]]></printWhenExpression>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						</box>
+						<staticText>
+							<reportElement x="7" y="6" width="60" height="20" uuid="e6754b29-4a18-4926-b65b-2dfa946982d4"/>
+							<text><![CDATA[ご指定口座]]></text>
+						</staticText>
+						<textField>
+							<reportElement x="153" y="31" width="188" height="20" uuid="2a327c7d-e456-41ee-86bd-07ef01c6e9bd"/>
+							<textFieldExpression><![CDATA[$F{bankAccountAccountType}]]></textFieldExpression>
+						</textField>
+						<staticText>
+							<reportElement x="79" y="6" width="70" height="20" uuid="8909333a-81a3-4d8c-86be-44cf985d5216"/>
+							<textElement textAlignment="Right"/>
+							<text><![CDATA[金融機関名  :]]></text>
+						</staticText>
+						<staticText>
+							<reportElement x="79" y="31" width="70" height="20" uuid="f3b3f56e-d676-464e-8ca1-feb04719dcb9"/>
+							<textElement textAlignment="Right"/>
+							<text><![CDATA[支店名  :]]></text>
+						</staticText>
+						<textField>
+							<reportElement x="153" y="6" width="188" height="20" uuid="23e052fb-db27-4882-92b6-64db496813e2"/>
+							<textFieldExpression><![CDATA[$F{bankAccountFinancialInstitutionName}]]></textFieldExpression>
+						</textField>
+						<staticText>
+							<reportElement x="79" y="56" width="70" height="20" uuid="6d3b76b8-85c7-45d9-bbeb-1ffa546b75a6"/>
+							<textElement textAlignment="Right"/>
+							<text><![CDATA[口座番号  :]]></text>
+						</staticText>
+						<textField>
+							<reportElement x="153" y="56" width="50" height="20" uuid="0c135874-260e-4512-a55c-71067ee1babe"/>
+							<textFieldExpression><![CDATA[$F{accountTypeYourDesignatedAccount}]]></textFieldExpression>
+						</textField>
+						<staticText>
+							<reportElement x="79" y="82" width="70" height="20" uuid="bb7dd7df-db5f-4c9b-981f-8e844b3fcc57"/>
+							<textElement textAlignment="Right"/>
+							<text><![CDATA[振替予定日  :]]></text>
+						</staticText>
+						<textField>
+							<reportElement x="153" y="82" width="190" height="20" uuid="decb8a71-5aa3-43d7-a2e4-c9b72ef6ac23"/>
+							<textFieldExpression><![CDATA[$F{transferDate}]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement x="206" y="57" width="134" height="20" uuid="b7bb739d-e361-4397-a38e-a3130f2947a7"/>
+							<textFieldExpression><![CDATA[$F{pleaseSpecifyAccountAccountNumber}]]></textFieldExpression>
+						</textField>
+					</frame>
+				</frame>
+			</frame>
+		</band>
+	</detail>
+	<summary>
+		<band height="213" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="10" width="220" height="20" uuid="de801fa2-b269-4bec-8de4-6a4f27d83023"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[ご 連 絡 事 項]]></text>
+			</staticText>
+			<frame>
+				<reportElement x="0" y="40" width="555" height="172" uuid="f21d7b58-37d2-49a1-a413-74121bd8ca0b"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textField>
+					<reportElement x="5" y="10" width="108" height="20" uuid="65d1773d-8934-4133-b3b1-500ba80f0f3c"/>
+					<textFieldExpression><![CDATA[$F{dunningWording_3}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="5" y="32" width="108" height="20" uuid="12da411f-43f4-43da-8950-76b8e9be8643"/>
+					<textFieldExpression><![CDATA[$F{dunningWording_1}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</summary>
+</jasperReport>
