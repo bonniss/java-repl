@@ -193,7 +193,7 @@
 		<fieldDescription><![CDATA[使用電力量合計]]></fieldDescription>
 	</field>
     <!-- No.4 -->
-    <field name="itemName" class="java.lang.String">
+    <!-- <field name="itemName" class="java.lang.String">
 		<fieldDescription><![CDATA[項目名]]></fieldDescription>
 	</field>
 	<field name="unitPrice" class="java.lang.String">
@@ -207,7 +207,7 @@
 	</field>
 	<field name="fee" class="java.lang.String">
 		<fieldDescription><![CDATA[料金]]></fieldDescription>
-	</field>
+	</field> -->
     <!-- END FIELDS DECLARATION -->
 	<background>
 		<band splitType="Stretch"/>
