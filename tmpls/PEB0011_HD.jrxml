@@ -114,6 +114,39 @@
 	<field name="transferDate" class="java.lang.String">
 		<fieldDescription><![CDATA[振替予定日]]></fieldDescription>
 	</field>
+	<field name="agencyDivision" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[代理店区分]]></fieldDescription>
+	</field>
+    <field name="agencyAddress_1" class="java.lang.String">
+		<fieldDescription><![CDATA[(empty)]]></fieldDescription>
+	</field>
+	<field name="agencyAddress_2" class="java.lang.String">
+		<fieldDescription><![CDATA[(empty)]]></fieldDescription>
+	</field>
+	<field name="agencyAddress" class="java.lang.String">
+		<fieldDescription><![CDATA[(empty)]]></fieldDescription>
+	</field>
+	<field name="agencyApartmentName" class="java.lang.String">
+		<fieldDescription><![CDATA[(empty)]]></fieldDescription>
+	</field>
+	<field name="agencyBuilding" class="java.lang.String">
+		<fieldDescription><![CDATA[(empty)]]></fieldDescription>
+	</field>
+	<field name="agencyChome" class="java.lang.String">
+		<fieldDescription><![CDATA[(empty)]]></fieldDescription>
+	</field>
+	<field name="agencyKanjiName_1" class="java.lang.String">
+		<fieldDescription><![CDATA[(empty)]]></fieldDescription>
+	</field>
+	<field name="agencyNo" class="java.lang.String">
+		<fieldDescription><![CDATA[(empty)]]></fieldDescription>
+	</field>
+	<field name="agencyRoomNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[(empty)]]></fieldDescription>
+	</field>
+	<field name="agencyZipCd" class="java.lang.String">
+		<fieldDescription><![CDATA[(empty)]]></fieldDescription>
+	</field>
     <!-- END FIELDS DECLARATION -->
 	<background>
 		<band splitType="Stretch"/>
