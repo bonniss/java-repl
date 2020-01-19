@@ -2,8 +2,7 @@
 <!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PEB0011_HD" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6eb1f3c4-119d-43c2-8a7e-45d7d68912d9">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
-    <style name="defaultStyle" isDefault="true" fontName="IPAexフォント"/>
-    <!-- START FIELDS DECLARATION -->
+	<style name="defaultStyle" isDefault="true" fontName="IPAexフォント"/>
 	<parameter name="HTBE_PAYMENT_METHOD" class="java.math.BigDecimal"/>
 	<parameter name="HTBE_PAYMENT_SERIAL" class="java.math.BigDecimal"/>
 	<parameter name="HTBE_PRESSURE_TYPE" class="java.lang.String">
@@ -117,7 +116,7 @@
 	<field name="agencyDivision" class="java.math.BigDecimal">
 		<fieldDescription><![CDATA[代理店区分]]></fieldDescription>
 	</field>
-    <field name="agencyAddress_1" class="java.lang.String">
+	<field name="agencyAddress_1" class="java.lang.String">
 		<fieldDescription><![CDATA[(empty)]]></fieldDescription>
 	</field>
 	<field name="agencyAddress_2" class="java.lang.String">
@@ -147,7 +146,9 @@
 	<field name="agencyZipCd" class="java.lang.String">
 		<fieldDescription><![CDATA[(empty)]]></fieldDescription>
 	</field>
-    <!-- END FIELDS DECLARATION -->
+	<variable name="agencyZipCd1" class="java.lang.Integer" calculation="Count">
+		<variableExpression><![CDATA[$F{agencyZipCd}]]></variableExpression>
+	</variable>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -185,20 +186,14 @@
 			</frame>
 			<frame>
 				<reportElement x="320" y="0" width="235" height="250" uuid="056a754d-3d9e-4198-b202-f3e1701a7349"/>
-				<!-- <image>
-					<reportElement x="125" y="30" width="100" height="105" uuid="10663188-7249-42a6-8f7f-32f1ff3d397d"/>
-					<imageExpression><![CDATA["/images/stamp.png"]]></imageExpression>
-				</image>
-				<image>
-					<reportElement x="66" y="80" width="110" height="20" uuid="11fe5e73-f8c3-437a-a2c5-e401c091b8df"/>
-					<imageExpression><![CDATA["/images/heading.png"]]></imageExpression>
-				</image> -->
 				<textField>
 					<reportElement x="133" y="1" width="100" height="20" uuid="5f561927-602e-410d-b02a-c3b71f9f8209"/>
 					<textFieldExpression><![CDATA[$F{dateOfIssuance}]]></textFieldExpression>
 				</textField>
 				<staticText>
-					<reportElement x="68" y="108" width="166" height="120" uuid="cc5db276-e668-4814-a331-a4ead9b5b5b8"/>
+					<reportElement x="68" y="108" width="166" height="120" uuid="cc5db276-e668-4814-a331-a4ead9b5b5b8">
+						<printWhenExpression><![CDATA[$F{agencyDivision} == null || $F{agencyDivision}.compareTo(new BigDecimal(2)) != 0]]></printWhenExpression>
+					</reportElement>
 					<textElement>
 						<font size="9"/>
 					</textElement>
@@ -214,6 +209,39 @@
 TEL:050-3852-1193
 ]]></text>
 				</staticText>
+				<frame>
+					<reportElement x="73" y="108" width="160" height="142" uuid="1d6cea78-7a67-4c75-a5ec-b79db2cedc6c">
+						<printWhenExpression><![CDATA[$F{agencyDivision} != null && $F{agencyDivision}.compareTo(new BigDecimal(2)) == 0]]></printWhenExpression>
+					</reportElement>
+					<textField>
+						<reportElement x="0" y="1" width="160" height="20" uuid="fd5381c3-d265-4436-b298-d2d68ed2c270"/>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{agencyKanjiName_1}]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement x="0" y="22" width="160" height="20" uuid="1c83b61e-f734-4848-9bff-d74303b68217"/>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA["〒" + $F{agencyZipCd}]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement x="0" y="43" width="160" height="28" uuid="6c989117-f4d6-48e2-ac6e-0628a89693a9"/>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{agencyAddress_1}]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement x="0" y="71" width="160" height="30" uuid="01c457f7-438f-44c2-87fc-c64c90d7f8f4"/>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{agencyBuilding}]]></textFieldExpression>
+					</textField>
+				</frame>
 			</frame>
 			<textField>
 				<reportElement x="168" y="260" width="218" height="22" uuid="266c64de-8d67-4d18-98ff-ff9633fbc0bf"/>
