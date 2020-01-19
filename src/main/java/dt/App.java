@@ -332,24 +332,24 @@ public final class App {
                         issuanceHistoryDetail.getT948106(),   // demandAddress
                         issuanceHistoryDetail.getT948107(),   // demandDestinationBillApartmentName
                         issuanceHistoryDetail.getT948108(),   // contractType
-                        issuanceHistoryDetail.getT948109(),   // NUMERIC | contractPower
+                        convertBigDecimalToString(issuanceHistoryDetail.getT948109()),   // NUMERIC | contractPower
                         issuanceHistoryDetail.getT948201(),   // periodOfUseSelf
                         issuanceHistoryDetail.getT948202(),   // periodOfUseOptimal
-                        issuanceHistoryDetail.getT948203(),   // NUMERIC | theTotalAmountOfElectricPowerUsed
+                        convertBigDecimalToString(issuanceHistoryDetail.getT948203()),   // NUMERIC | theTotalAmountOfElectricPowerUsed
                         issuanceHistoryDetail.getT948206(),   // meterReadingDate
-                        issuanceHistoryDetail.getT948501(),   // NUMERIC | monthIndicationNumber
-                        issuanceHistoryDetail.getT948502(),   // NUMERIC | thePreviousMonthInstructionNumber
-                        issuanceHistoryDetail.getT948503(),   // NUMERIC | subtracted
-                        issuanceHistoryDetail.getT948504(),   // NUMERIC | instrumentMultiplyingFactor
+                        convertBigDecimalToString(issuanceHistoryDetail.getT948501()),   // NUMERIC | monthIndicationNumber
+                        convertBigDecimalToString(issuanceHistoryDetail.getT948502()),   // NUMERIC | thePreviousMonthInstructionNumber
+                        convertBigDecimalToString(issuanceHistoryDetail.getT948503()),   // NUMERIC | subtracted
+                        convertBigDecimalToString(issuanceHistoryDetail.getT948504()),   // NUMERIC | instrumentMultiplyingFactor
                         issuanceHistoryDetail.getT948505(),   // instrumentNumber
                         issuanceHistoryDetail.getT948506(),   // theNextMeterReadingDate
-                        issuanceHistoryDetail.getT948602(),   // NUMERIC | fuelCostAdjustmentAmountTheMonth_1
-                        issuanceHistoryDetail.getT948603(),   // NUMERIC | fuelCostAdjustmentAmountTheCurrentMonth_2
-                        issuanceHistoryDetail.getT948604(),   // NUMERIC | fuelCostAdjustmentAmountTheNextMonth_1
-                        issuanceHistoryDetail.getT948605(),   // NUMERIC | fuelCostAdjustmentAmountTheNextMonth_2
-                        issuanceHistoryDetail.getT948701(),   // NUMERIC | renewableEnergyPowerGenerationPromotionLevyTheMonth
-                        issuanceHistoryDetail.getT948901(),   // NUMERIC | billingAmount
-                        issuanceHistoryDetail.getT948902(),   // NUMERIC | taxEquivalent
+                        convertBigDecimalToString(issuanceHistoryDetail.getT948602()),   // NUMERIC | fuelCostAdjustmentAmountTheMonth_1
+                        convertBigDecimalToString(issuanceHistoryDetail.getT948603()),   // NUMERIC | fuelCostAdjustmentAmountTheCurrentMonth_2
+                        convertBigDecimalToString(issuanceHistoryDetail.getT948604()),   // NUMERIC | fuelCostAdjustmentAmountTheNextMonth_1
+                        convertBigDecimalToString(issuanceHistoryDetail.getT948605()),   // NUMERIC | fuelCostAdjustmentAmountTheNextMonth_2
+                        convertBigDecimalToString(issuanceHistoryDetail.getT948701()),   // NUMERIC | renewableEnergyPowerGenerationPromotionLevyTheMonth
+                        convertBigDecimalToString(issuanceHistoryDetail.getT948901()),   // NUMERIC | billingAmount
+                        convertBigDecimalToString(issuanceHistoryDetail.getT948902()),   // NUMERIC | taxEquivalent
                         convertBigDecimalToString(calcSum(issuanceHistoryDetail.getT948901(), issuanceHistoryDetail.getT948902()))
                     }
                 };
