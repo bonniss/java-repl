@@ -137,4 +137,124 @@ public final class App {
 
     }
 
+    private class InvoicingDetailsModel extends AbstractTableModel {
+
+        private static final long serialVersionUID = 1L;
+
+        private String[] columnNames = { "dateOfIssuance", "billingDate", "billableNumberOfBases", "billingAmount",
+                "contractPower", "contractType", "customerNumber", "demandAddress",
+                "demandDestinationBillApartmentName", "demandDestinationName", "demandLocationPlantName",
+                "fuelCostAdjustmentAmountTheMonth_1", "fuelCostAdjustmentAmountTheNextMonth_1", "maximumDemandYears_1",
+                "maximumDemandPower_1", "maximumDemandPower_10", "maximumDemandPower_11", "maximumDemandPower_12",
+                "maximumDemandPower_2", "maximumDemandPower_3", "maximumDemandPower_4", "maximumDemandPower_5",
+                "maximumDemandPower_6", "maximumDemandPower_7", "maximumDemandPower_8", "maximumDemandPower_9",
+                "maximumDemandYears_10", "maximumDemandYears_11", "maximumDemandYears_12", "maximumDemandYears_2",
+                "maximumDemandYears_3", "maximumDemandYears_4", "maximumDemandYears_5", "maximumDemandYears_6",
+                "maximumDemandYears_7", "maximumDemandYears_8", "maximumDemandYears_9", "monthEffectiveAmountOfPower",
+                "monthEffectiveInstructionNumberMainLine", "monthEffectiveInstructionNumberSpareLine",
+                "monthFullTimeInstructionNumberMainLine", "monthFullTimeInstructionNumberSpareLine",
+                "monthInvalidInstructionNumberMainLine", "monthInvalidInstructionNumberSpareLine",
+                "monthMaximumDemandPower", "monthMultiplyingFactor", "monthReactiveEnergy", "periodOfUseOptimal",
+                "periodOfUseSelf", "powerFactor", "previousMonthFuelCostAdjustmentAmount",
+                "renewableEnergyPowerGenerationPromotionLevyTheMonth", "supplyPointSpecificNumber", "taxEquivalent",
+                "thePreviousMonthFullTimeInstructionNumberMainLine",
+                "thePreviousMonthFullTimeInstructionNumberSpareLine",
+                "thePreviousMonthInvalidInstructionNumberMainLine", "thePreviousMonthInvalidInstructionNumberSpareLine",
+                "thePreviousMonthMultiplyingFactor", "thePreviousMonthTheEffectiveInstructionNumberMainLine",
+                "thePreviousMonthTheEffectiveInstructionNumberSpareLine", "theTotalAmountOfElectricPowerUsed", };
+
+        private Object[][] data = {};
+
+        public InvoicingDetailsModel() {
+        }
+
+        public InvoicingDetailsModel(InvoicingHtbeGetInvoiceHistoryResult invoicingHistory,
+                T948EntityModel issuanceHistoryDetail, T949EntityModel billingHistoryFeeBreakdown) {
+            data = new Object[][] { { invoicingHistory.getDateOfIssuance(), invoicingHistory.getBillingDate(),
+                    invoicingHistory.getBillableNumberOfBases(), issuanceHistoryDetail.getT948901(), // NUMERIC •
+                                                                                                     // billingAmount
+                    issuanceHistoryDetail.getT948109(), // NUMERIC • contractPower
+                    issuanceHistoryDetail.getT948108(), // contractType
+                    issuanceHistoryDetail.getT948102(), // customerNumber
+                    issuanceHistoryDetail.getT948106(), // demandAddress
+                    issuanceHistoryDetail.getT948107(), // demandDestinationBillApartmentName
+                    issuanceHistoryDetail.getT948104(), // demandDestinationName
+                    issuanceHistoryDetail.getT948105(), // demandLocationPlantName
+                    issuanceHistoryDetail.getT948602(), // NUMERIC • fuelCostAdjustmentAmountTheMonth_1
+                    issuanceHistoryDetail.getT948604(), // NUMERIC • fuelCostAdjustmentAmountTheNextMonth_1
+                    issuanceHistoryDetail.getT948301(), // maximumDemandYears_1
+                    issuanceHistoryDetail.getT948302(), // NUMERIC • maximumDemandPower_1
+                    issuanceHistoryDetail.getT948320(), // NUMERIC • maximumDemandPower_10
+                    issuanceHistoryDetail.getT948322(), // NUMERIC • maximumDemandPower_11
+                    issuanceHistoryDetail.getT948324(), // NUMERIC • maximumDemandPower_12
+                    issuanceHistoryDetail.getT948304(), // NUMERIC • maximumDemandPower_2
+                    issuanceHistoryDetail.getT948306(), // NUMERIC • maximumDemandPower_3
+                    issuanceHistoryDetail.getT948308(), // NUMERIC • maximumDemandPower_4
+                    issuanceHistoryDetail.getT948310(), // NUMERIC • maximumDemandPower_5
+                    issuanceHistoryDetail.getT948312(), // NUMERIC • maximumDemandPower_6
+                    issuanceHistoryDetail.getT948314(), // NUMERIC • maximumDemandPower_7
+                    issuanceHistoryDetail.getT948316(), // NUMERIC • maximumDemandPower_8
+                    issuanceHistoryDetail.getT948318(), // NUMERIC • maximumDemandPower_9
+                    issuanceHistoryDetail.getT948319(), // maximumDemandYears_10
+                    issuanceHistoryDetail.getT948321(), // maximumDemandYears_11
+                    issuanceHistoryDetail.getT948323(), // maximumDemandYears_12
+                    issuanceHistoryDetail.getT948303(), // maximumDemandYears_2
+                    issuanceHistoryDetail.getT948305(), // maximumDemandYears_3
+                    issuanceHistoryDetail.getT948307(), // maximumDemandYears_4
+                    issuanceHistoryDetail.getT948309(), // maximumDemandYears_5
+                    issuanceHistoryDetail.getT948311(), // maximumDemandYears_6
+                    issuanceHistoryDetail.getT948313(), // maximumDemandYears_7
+                    issuanceHistoryDetail.getT948315(), // maximumDemandYears_8
+                    issuanceHistoryDetail.getT948317(), // maximumDemandYears_9
+                    issuanceHistoryDetail.getT948415(), // NUMERIC • monthEffectiveAmountOfPower
+                    issuanceHistoryDetail.getT948403(), // NUMERIC • monthEffectiveInstructionNumberMainLine
+                    issuanceHistoryDetail.getT948404(), // NUMERIC • monthEffectiveInstructionNumberSpareLine
+                    issuanceHistoryDetail.getT948401(), // NUMERIC • monthFullTimeInstructionNumberMainLine
+                    issuanceHistoryDetail.getT948402(), // NUMERIC • monthFullTimeInstructionNumberSpareLine
+                    issuanceHistoryDetail.getT948405(), // NUMERIC • monthInvalidInstructionNumberMainLine
+                    issuanceHistoryDetail.getT948406(), // NUMERIC • monthInvalidInstructionNumberSpareLine
+                    issuanceHistoryDetail.getT948205(), // NUMERIC • monthMaximumDemandPower
+                    issuanceHistoryDetail.getT948407(), // NUMERIC • monthMultiplyingFactor
+                    issuanceHistoryDetail.getT948416(), // NUMERIC • monthReactiveEnergy
+                    issuanceHistoryDetail.getT948202(), // periodOfUseOptimal
+                    issuanceHistoryDetail.getT948201(), // periodOfUseSelf
+                    issuanceHistoryDetail.getT948204(), // NUMERIC • powerFactor
+                    issuanceHistoryDetail.getT948601(), // NUMERIC • previousMonthFuelCostAdjustmentAmount
+                    issuanceHistoryDetail.getT948701(), // NUMERIC • renewableEnergyPowerGenerationPromotionLevyTheMonth
+                    issuanceHistoryDetail.getT948103(), // supplyPointSpecificNumber
+                    issuanceHistoryDetail.getT948902(), // NUMERIC • taxEquivalent
+                    issuanceHistoryDetail.getT948408(), // NUMERIC • thePreviousMonthFullTimeInstructionNumberMainLine
+                    issuanceHistoryDetail.getT948409(), // NUMERIC • thePreviousMonthFullTimeInstructionNumberSpareLine
+                    issuanceHistoryDetail.getT948412(), // NUMERIC • thePreviousMonthInvalidInstructionNumberMainLine
+                    issuanceHistoryDetail.getT948413(), // NUMERIC • thePreviousMonthInvalidInstructionNumberSpareLine
+                    issuanceHistoryDetail.getT948414(), // NUMERIC • thePreviousMonthMultiplyingFactor
+                    issuanceHistoryDetail.getT948410(), // NUMERIC •
+                                                        // thePreviousMonthTheEffectiveInstructionNumberMainLine
+                    issuanceHistoryDetail.getT948411(), // NUMERIC •
+                                                        // thePreviousMonthTheEffectiveInstructionNumberSpareLine
+                    issuanceHistoryDetail.getT948203(), // NUMERIC • theTotalAmountOfElectricPowerUsed
+                    } };
+        }
+
+        @Override
+        public int getRowCount() {
+            return this.data.length;
+        }
+
+        @Override
+        public int getColumnCount() {
+            return this.columnNames.length;
+        }
+
+        @Override
+        public String getColumnName(int columnIndex) {
+            return this.columnNames[columnIndex];
+        }
+
+        @Override
+        public Object getValueAt(int rowIndex, int columnIndex) {
+            return this.data[rowIndex][columnIndex];
+        }
+    }
+
 }

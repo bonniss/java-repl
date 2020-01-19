@@ -2,19 +2,21 @@
 <!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PEB0011_DETAIL_HP" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d05b963e-f2ec-4825-8a5b-6fbceaf4e311">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
-    <style name="defaultStyle" isDefault="true" fontName="IPAexフォント" pdfFontName="IPAexフォント"/>
+    <style name="defaultStyle" isDefault="true" fontName="IPAexフォント"/>
     <!-- START FIELDS DECLARATION -->
-	<field name="amountToUse" class="java.lang.String">
-		<fieldDescription><![CDATA[使用量]]></fieldDescription>
+    <!-- No.2 -->
+	<field name="dateOfIssuance" class="java.lang.String">
+		<fieldDescription><![CDATA[発行年月日]]></fieldDescription>
 	</field>
 	<field name="billableNumberOfBases" class="java.lang.String">
 		<fieldDescription><![CDATA[請求対象拠点数]]></fieldDescription>
 	</field>
-	<field name="billingAmount" class="java.lang.String">
-		<fieldDescription><![CDATA[請求金額]]></fieldDescription>
-	</field>
 	<field name="billingDate" class="java.lang.String">
 		<fieldDescription><![CDATA[請求年月]]></fieldDescription>
+	</field>
+    <!-- No.3 -->
+	<field name="billingAmount" class="java.lang.String">
+		<fieldDescription><![CDATA[請求金額]]></fieldDescription>
 	</field>
 	<field name="contractPower" class="java.lang.String">
 		<fieldDescription><![CDATA[契約電力]]></fieldDescription>
@@ -24,9 +26,6 @@
 	</field>
 	<field name="customerNumber" class="java.lang.String">
 		<fieldDescription><![CDATA[お客様番号]]></fieldDescription>
-	</field>
-	<field name="dateOfIssuance" class="java.lang.String">
-		<fieldDescription><![CDATA[発行年月日]]></fieldDescription>
 	</field>
 	<field name="demandAddress" class="java.lang.String">
 		<fieldDescription><![CDATA[需要先住所]]></fieldDescription>
@@ -40,17 +39,11 @@
 	<field name="demandLocationPlantName" class="java.lang.String">
 		<fieldDescription><![CDATA[需要場所事業場名]]></fieldDescription>
 	</field>
-	<field name="fee" class="java.lang.String">
-		<fieldDescription><![CDATA[料金]]></fieldDescription>
-	</field>
 	<field name="fuelCostAdjustmentAmountTheMonth_1" class="java.math.BigDecimal">
 		<fieldDescription><![CDATA[燃料費調整額_当月1]]></fieldDescription>
 	</field>
 	<field name="fuelCostAdjustmentAmountTheNextMonth_1" class="java.math.BigDecimal">
 		<fieldDescription><![CDATA[燃料費調整額_翌月1]]></fieldDescription>
-	</field>
-	<field name="itemName" class="java.lang.String">
-		<fieldDescription><![CDATA[項目名]]></fieldDescription>
 	</field>
 	<field name="maximumDemandYears_1" class="java.lang.String">
 		<fieldDescription><![CDATA[最大需要年月１]]></fieldDescription>
@@ -199,6 +192,10 @@
 	<field name="theTotalAmountOfElectricPowerUsed" class="java.lang.String">
 		<fieldDescription><![CDATA[使用電力量合計]]></fieldDescription>
 	</field>
+    <!-- No.4 -->
+    <field name="itemName" class="java.lang.String">
+		<fieldDescription><![CDATA[項目名]]></fieldDescription>
+	</field>
 	<field name="unitPrice" class="java.lang.String">
 		<fieldDescription><![CDATA[単価]]></fieldDescription>
 	</field>
@@ -207,6 +204,9 @@
 	</field>
 	<field name="usageUnit" class="java.lang.String">
 		<fieldDescription><![CDATA[使用量単位]]></fieldDescription>
+	</field>
+	<field name="fee" class="java.lang.String">
+		<fieldDescription><![CDATA[料金]]></fieldDescription>
 	</field>
     <!-- END FIELDS DECLARATION -->
 	<background>
