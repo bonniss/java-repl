@@ -207,7 +207,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="48" splitType="Stretch">
+		<band height="558" splitType="Stretch">
 			<staticText>
 				<reportElement x="390" y="0" width="60" height="15" uuid="f5dc064c-d54a-4c4c-bcf6-bbc6d1391a1d"/>
 				<text><![CDATA[発行年月日]]></text>
@@ -232,29 +232,22 @@
 				<textElement verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[$F{billableNumberOfBases}]]></textFieldExpression>
 			</textField>
-		</band>
-	</title>
-	<pageHeader>
-		<band height="18" splitType="Stretch"/>
-	</pageHeader>
-	<detail>
-		<band height="685" splitType="Stretch">
 			<staticText>
-				<reportElement x="0" y="0" width="100" height="20" uuid="8ec30491-ddbd-43c3-9993-0b1b499366cc"/>
+				<reportElement x="2" y="42" width="100" height="20" uuid="262795e0-0596-4896-8b0f-b818dfaf9bf5"/>
 				<textElement>
 					<font size="14" isBold="true"/>
 				</textElement>
 				<text><![CDATA[ご契約内容]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="200" width="230" height="20" uuid="162b4a77-d8a7-455a-89c2-6865176aad42"/>
+				<reportElement x="2" y="242" width="230" height="20" uuid="c2a2d19e-2bed-40e8-83b6-5b6384c87298"/>
 				<textElement>
 					<font size="14" isBold="true"/>
 				</textElement>
 				<text><![CDATA[使用電力量と当月最大需要電力]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="360" y="30" width="194" height="20" uuid="1174fe0b-86ae-4d26-8e76-2875ad6258a0">
+				<reportElement x="362" y="72" width="194" height="20" uuid="a9fd2fc2-69ee-44c1-8ae5-5e6886b0b03f">
 					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
 				</reportElement>
 				<textElement>
@@ -264,7 +257,7 @@
 				<text><![CDATA[最大需要電力(kW)履歴]]></text>
 			</staticText>
 			<frame>
-				<reportElement key="frmAnnIndicationNo" x="0" y="339" width="350" height="159" uuid="af18cad0-e720-4c76-9ce1-0e2ab44a5fe4">
+				<reportElement key="frmAnnIndicationNo" x="2" y="381" width="350" height="159" uuid="86e950de-2c12-4085-bc74-6f4bb742c48b">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.grid.JSSGridBagLayout"/>
 					<property name="com.jaspersoft.studio.element.name" value="frmAnnIndicationNo"/>
 				</reportElement>
@@ -275,7 +268,7 @@
 					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<staticText>
-					<reportElement mode="Opaque" x="0" y="0" width="39" height="23" backcolor="#DCE6F1" uuid="f2bcb0a8-7355-4317-abad-da4a803a0c74">
+					<reportElement mode="Opaque" x="0" y="0" width="39" height="23" backcolor="#DCE6F1" uuid="f0d3c079-741f-4ac3-80b7-748e5e959629">
 						<property name="com.jaspersoft.layout.grid.x" value="0"/>
 						<property name="com.jaspersoft.layout.grid.y" value="0"/>
 						<property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
@@ -293,7 +286,7 @@
 					<text><![CDATA[]]></text>
 				</staticText>
 				<staticText>
-					<reportElement mode="Opaque" x="39" y="0" width="156" height="23" backcolor="#DCE6F1" uuid="9fa60800-7747-4d44-9d16-36b70dd407aa">
+					<reportElement mode="Opaque" x="39" y="0" width="156" height="23" backcolor="#DCE6F1" uuid="a73ed9a7-ac9e-497a-8d41-474b74838739">
 						<property name="com.jaspersoft.layout.grid.x" value="1"/>
 						<property name="com.jaspersoft.layout.grid.y" value="0"/>
 						<property name="com.jaspersoft.layout.grid.weight.x" value="4.0"/>
@@ -312,7 +305,7 @@
 					<text><![CDATA[当月(本線/予備線)]]></text>
 				</staticText>
 				<staticText>
-					<reportElement mode="Opaque" x="195" y="0" width="155" height="23" backcolor="#DCE6F1" uuid="42d8044c-2d08-4693-9896-e72fca0a7340">
+					<reportElement mode="Opaque" x="195" y="0" width="155" height="23" backcolor="#DCE6F1" uuid="ceb2d3d6-446b-421e-826b-345611222cbe">
 						<property name="com.jaspersoft.layout.grid.x" value="-1"/>
 						<property name="com.jaspersoft.layout.grid.y" value="-1"/>
 						<property name="com.jaspersoft.layout.grid.weight.x" value="4.0"/>
@@ -331,7 +324,7 @@
 					<text><![CDATA[前月(本線/予備線)]]></text>
 				</staticText>
 				<staticText>
-					<reportElement mode="Opaque" x="0" y="23" width="39" height="23" backcolor="#DCE6F1" uuid="4409e678-4b3d-4216-89d7-fc3b7070dd67">
+					<reportElement mode="Opaque" x="0" y="23" width="39" height="23" backcolor="#DCE6F1" uuid="14f1ea3f-30c5-430e-899b-08f5538833ed">
 						<property name="com.jaspersoft.layout.grid.x" value="0"/>
 						<property name="com.jaspersoft.layout.grid.y" value="1"/>
 						<property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
@@ -350,7 +343,7 @@
 					<text><![CDATA[全日]]></text>
 				</staticText>
 				<textField>
-					<reportElement x="39" y="23" width="156" height="23" uuid="0a2f1048-ae73-4bdb-aa5f-43040bf0c1fe">
+					<reportElement x="39" y="23" width="156" height="23" uuid="322da2c6-9429-4f1a-b0c5-f3fa576f08f9">
 						<property name="com.jaspersoft.layout.grid.x" value="1"/>
 						<property name="com.jaspersoft.layout.grid.y" value="1"/>
 						<property name="com.jaspersoft.layout.grid.weight.x" value="4.0"/>
@@ -367,7 +360,7 @@
 					<textFieldExpression><![CDATA[$F{monthFullTimeInstructionNumberMainLine}+"/"+$F{monthFullTimeInstructionNumberSpareLine}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="195" y="23" width="155" height="23" uuid="a746c8be-cea8-4509-bd7c-6052eb7f4176">
+					<reportElement x="195" y="23" width="155" height="23" uuid="bd619d0e-38c8-41b4-bf8e-fd92ffc700cb">
 						<property name="com.jaspersoft.layout.grid.x" value="2"/>
 						<property name="com.jaspersoft.layout.grid.y" value="1"/>
 						<property name="com.jaspersoft.layout.grid.weight.x" value="4.0"/>
@@ -384,7 +377,7 @@
 					<textFieldExpression><![CDATA[$F{thePreviousMonthFullTimeInstructionNumberMainLine}+"/"+$F{thePreviousMonthFullTimeInstructionNumberSpareLine}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="195" y="46" width="155" height="23" uuid="b78d71a4-b249-44af-ad07-fa6feb7f5c21">
+					<reportElement x="195" y="46" width="155" height="23" uuid="6284efd8-17ad-4f4f-8889-56ec117660dc">
 						<property name="com.jaspersoft.layout.grid.x" value="2"/>
 						<property name="com.jaspersoft.layout.grid.y" value="2"/>
 						<property name="com.jaspersoft.layout.grid.weight.x" value="4.0"/>
@@ -401,7 +394,7 @@
 					<textFieldExpression><![CDATA[$F{thePreviousMonthTheEffectiveInstructionNumberMainLine}+"/"+$F{thePreviousMonthTheEffectiveInstructionNumberSpareLine}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="39" y="46" width="156" height="23" uuid="dec9ecc2-c479-4405-8fd5-b576f6aad09c">
+					<reportElement x="39" y="46" width="156" height="23" uuid="a410381e-cc6a-4a2c-a1f3-6df4e55467ca">
 						<property name="com.jaspersoft.layout.grid.x" value="1"/>
 						<property name="com.jaspersoft.layout.grid.y" value="2"/>
 						<property name="com.jaspersoft.layout.grid.weight.x" value="4.0"/>
@@ -418,7 +411,7 @@
 					<textFieldExpression><![CDATA[$F{monthEffectiveInstructionNumberMainLine}+"/"+$F{monthEffectiveInstructionNumberSpareLine}]]></textFieldExpression>
 				</textField>
 				<staticText>
-					<reportElement mode="Opaque" x="0" y="46" width="39" height="23" backcolor="#DCE6F1" uuid="6139e34e-7340-411a-bd12-ea56431c4651">
+					<reportElement mode="Opaque" x="0" y="46" width="39" height="23" backcolor="#DCE6F1" uuid="713e30ac-2551-443d-b24c-b139090e95da">
 						<property name="com.jaspersoft.layout.grid.x" value="0"/>
 						<property name="com.jaspersoft.layout.grid.y" value="2"/>
 						<property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
@@ -437,7 +430,7 @@
 					<text><![CDATA[有効]]></text>
 				</staticText>
 				<textField>
-					<reportElement x="39" y="69" width="156" height="23" uuid="4afff122-ec65-4fd5-a594-7767db1e764e">
+					<reportElement x="39" y="69" width="156" height="23" uuid="1662ae78-abf4-4f53-b766-f2b7596d6cf4">
 						<property name="com.jaspersoft.layout.grid.x" value="1"/>
 						<property name="com.jaspersoft.layout.grid.y" value="3"/>
 						<property name="com.jaspersoft.layout.grid.weight.x" value="4.0"/>
@@ -454,7 +447,7 @@
 					<textFieldExpression><![CDATA[$F{monthInvalidInstructionNumberMainLine}+"/"+$F{monthInvalidInstructionNumberSpareLine}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="195" y="69" width="155" height="23" uuid="e7d3e3b6-0eb9-4bac-863f-44fd7c3fb108">
+					<reportElement x="195" y="69" width="155" height="23" uuid="e6b604f2-a630-4d3b-81ed-32bc69f07997">
 						<property name="com.jaspersoft.layout.grid.x" value="2"/>
 						<property name="com.jaspersoft.layout.grid.y" value="3"/>
 						<property name="com.jaspersoft.layout.grid.weight.x" value="4.0"/>
@@ -471,7 +464,7 @@
 					<textFieldExpression><![CDATA[$F{thePreviousMonthInvalidInstructionNumberMainLine}+"/"+$F{thePreviousMonthInvalidInstructionNumberSpareLine}]]></textFieldExpression>
 				</textField>
 				<staticText>
-					<reportElement mode="Opaque" x="0" y="69" width="39" height="23" backcolor="#DCE6F1" uuid="6a6b456b-b73e-44de-b63c-1dda4165d304">
+					<reportElement mode="Opaque" x="0" y="69" width="39" height="23" backcolor="#DCE6F1" uuid="76515563-dc10-4c4c-92f1-13abb02123fe">
 						<property name="com.jaspersoft.layout.grid.x" value="0"/>
 						<property name="com.jaspersoft.layout.grid.y" value="3"/>
 						<property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
@@ -490,7 +483,7 @@
 					<text><![CDATA[無効]]></text>
 				</staticText>
 				<staticText>
-					<reportElement mode="Opaque" x="0" y="92" width="39" height="22" backcolor="#DCE6F1" uuid="6caae123-c363-44e6-8b95-e8a6e1fb9d15">
+					<reportElement mode="Opaque" x="0" y="92" width="39" height="22" backcolor="#DCE6F1" uuid="d93698f0-2ae1-4e36-9c76-fe96ab7b77b4">
 						<property name="com.jaspersoft.layout.grid.x" value="0"/>
 						<property name="com.jaspersoft.layout.grid.y" value="4"/>
 						<property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
@@ -509,7 +502,7 @@
 					<text><![CDATA[乗率]]></text>
 				</staticText>
 				<textField>
-					<reportElement x="195" y="92" width="155" height="22" uuid="5f082267-e0e2-4344-abd8-05533d4cafc4">
+					<reportElement x="195" y="92" width="155" height="22" uuid="f8158cc9-d8fe-4708-9ea7-6e78437a9fd5">
 						<property name="com.jaspersoft.layout.grid.x" value="2"/>
 						<property name="com.jaspersoft.layout.grid.y" value="4"/>
 						<property name="com.jaspersoft.layout.grid.weight.x" value="4.0"/>
@@ -526,7 +519,7 @@
 					<textFieldExpression><![CDATA[$F{thePreviousMonthMultiplyingFactor}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="39" y="92" width="156" height="22" uuid="881d102d-6e35-4aae-be63-438e538e28b3">
+					<reportElement x="39" y="92" width="156" height="22" uuid="f74ef768-d009-4fb2-9a53-7de09deed309">
 						<property name="com.jaspersoft.layout.grid.x" value="1"/>
 						<property name="com.jaspersoft.layout.grid.y" value="4"/>
 						<property name="com.jaspersoft.layout.grid.weight.x" value="4.0"/>
@@ -543,7 +536,7 @@
 					<textFieldExpression><![CDATA[$F{monthMultiplyingFactor}]]></textFieldExpression>
 				</textField>
 				<frame>
-					<reportElement x="0" y="114" width="350" height="45" uuid="0cc12df9-e670-4e0e-9bbe-26b6fd0c583f">
+					<reportElement x="0" y="114" width="350" height="45" uuid="0734dee5-39bf-40c0-a95f-f29752a5b0c5">
 						<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.grid.JSSGridBagLayout"/>
 						<property name="com.jaspersoft.layout.grid.x" value="0"/>
 						<property name="com.jaspersoft.layout.grid.y" value="5"/>
@@ -558,7 +551,7 @@
 						<rightPen lineWidth="1.0"/>
 					</box>
 					<staticText>
-						<reportElement mode="Opaque" x="0" y="0" width="105" height="23" backcolor="#DCE6F1" uuid="a1f9a1d8-196a-4bd1-bbc2-1fbac06f03ec">
+						<reportElement mode="Opaque" x="0" y="0" width="105" height="23" backcolor="#DCE6F1" uuid="534f2f29-aae9-4762-9e8a-16ba38f2526c">
 							<property name="com.jaspersoft.layout.grid.x" value="-1"/>
 							<property name="com.jaspersoft.layout.grid.y" value="0"/>
 							<property name="com.jaspersoft.layout.grid.weight.x" value="3.0"/>
@@ -577,7 +570,7 @@
 						<text><![CDATA[当月有効電力量]]></text>
 					</staticText>
 					<textField>
-						<reportElement x="105" y="0" width="245" height="23" uuid="139ad4fa-31e6-4536-bb8f-cab2f9db071b">
+						<reportElement x="105" y="0" width="245" height="23" uuid="909d080a-ef22-480a-8e95-c9947f0681ad">
 							<property name="com.jaspersoft.layout.grid.x" value="1"/>
 							<property name="com.jaspersoft.layout.grid.y" value="0"/>
 							<property name="com.jaspersoft.layout.grid.weight.x" value="7.0"/>
@@ -594,7 +587,7 @@
 						<textFieldExpression><![CDATA[$F{monthEffectiveAmountOfPower}+"　kWh"]]></textFieldExpression>
 					</textField>
 					<staticText>
-						<reportElement mode="Opaque" x="0" y="23" width="105" height="22" backcolor="#DCE6F1" uuid="c201f38e-2831-4632-b745-0ae01b96cdbb">
+						<reportElement mode="Opaque" x="0" y="23" width="105" height="22" backcolor="#DCE6F1" uuid="cbf87b1e-f7ca-411e-b103-8dbc99cf29b2">
 							<property name="com.jaspersoft.layout.grid.x" value="-1"/>
 							<property name="com.jaspersoft.layout.grid.y" value="1"/>
 							<property name="com.jaspersoft.layout.grid.weight.x" value="3.0"/>
@@ -613,7 +606,7 @@
 						<text><![CDATA[当月無効電力量]]></text>
 					</staticText>
 					<textField>
-						<reportElement x="105" y="23" width="245" height="22" uuid="b7681550-eeab-4dff-8ff1-cad27925b6e0">
+						<reportElement x="105" y="23" width="245" height="22" uuid="cae08438-47bb-4bb0-a230-62e1f3711e6d">
 							<property name="com.jaspersoft.layout.grid.x" value="1"/>
 							<property name="com.jaspersoft.layout.grid.y" value="1"/>
 							<property name="com.jaspersoft.layout.grid.weight.x" value="7.0"/>
@@ -632,11 +625,11 @@
 				</frame>
 			</frame>
 			<frame>
-				<reportElement key="frmMaxDemandPowerHistory" x="360" y="50" width="194" height="240" uuid="8a9a197e-0342-4da3-ad15-6f89b46670b5">
+				<reportElement key="frmMaxDemandPowerHistory" x="362" y="92" width="194" height="240" uuid="f3e0dab3-1bca-4e41-8482-72040210bdba">
 					<property name="com.jaspersoft.studio.element.name" value="frmMaxDemandPowerHistory"/>
 				</reportElement>
 				<textField>
-					<reportElement x="90" y="60" width="104" height="20" uuid="8b69d6ef-8ea0-4999-ad7b-f0e63bda0cc6"/>
+					<reportElement x="90" y="60" width="104" height="20" uuid="57b2febe-b150-41f4-a53d-69ddb840e0ad"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -647,7 +640,7 @@
 					<textFieldExpression><![CDATA[$F{maximumDemandPower_4}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement mode="Opaque" x="0" y="160" width="90" height="20" backcolor="#DCE6F1" uuid="ef71af2b-692e-43bb-bc2a-cf4476664808"/>
+					<reportElement mode="Opaque" x="0" y="160" width="90" height="20" backcolor="#DCE6F1" uuid="c39e6d9c-a3fb-41ca-bee8-54941092d68c"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -660,7 +653,7 @@
 					<textFieldExpression><![CDATA[$F{maximumDemandYears_9}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="90" y="80" width="104" height="20" uuid="c5e2e790-68bd-4cc6-b2ec-8e3bfe961e53"/>
+					<reportElement x="90" y="80" width="104" height="20" uuid="8efa493d-3d3f-4f00-8d3b-14c8b48e5abd"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -671,7 +664,7 @@
 					<textFieldExpression><![CDATA[$F{maximumDemandPower_5}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement mode="Opaque" x="0" y="180" width="90" height="20" backcolor="#DCE6F1" uuid="f51858e9-2b91-4b88-9456-323540685cfd"/>
+					<reportElement mode="Opaque" x="0" y="180" width="90" height="20" backcolor="#DCE6F1" uuid="1da9da0c-b03d-4f82-bc16-58a8170500e3"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -684,7 +677,7 @@
 					<textFieldExpression><![CDATA[$F{maximumDemandYears_10}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement mode="Opaque" x="0" y="0" width="90" height="20" backcolor="#DCE6F1" uuid="527e7fb8-a5f2-4184-a9e2-cec9cf88243f"/>
+					<reportElement mode="Opaque" x="0" y="0" width="90" height="20" backcolor="#DCE6F1" uuid="9a54c3d1-6634-4733-b5af-962e5329e05c"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -697,7 +690,7 @@
 					<textFieldExpression><![CDATA[$F{maximumDemandYears_1}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="90" y="120" width="104" height="20" uuid="22e286bf-5f84-4e2c-9dd7-38105877f0f1"/>
+					<reportElement x="90" y="120" width="104" height="20" uuid="8c1864dd-8a1e-4f5d-b066-bb06874b7589"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -708,7 +701,7 @@
 					<textFieldExpression><![CDATA[$F{maximumDemandPower_7}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement mode="Opaque" x="0" y="120" width="90" height="20" backcolor="#DCE6F1" uuid="c5d8348b-d625-4527-a1c5-6d31f6483612"/>
+					<reportElement mode="Opaque" x="0" y="120" width="90" height="20" backcolor="#DCE6F1" uuid="724a4308-a073-4589-9792-26c980a7a0dc"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -721,7 +714,7 @@
 					<textFieldExpression><![CDATA[$F{maximumDemandYears_7}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="90" y="100" width="104" height="20" uuid="8d7e04a9-d255-46e0-a6de-c6e098f95933"/>
+					<reportElement x="90" y="100" width="104" height="20" uuid="0446a1a6-95b1-42a9-a547-a116f88c4500"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -732,7 +725,7 @@
 					<textFieldExpression><![CDATA[$F{maximumDemandPower_6}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="90" y="180" width="104" height="20" uuid="ad5b806e-db8a-422b-bffa-c4f1035e91ef"/>
+					<reportElement x="90" y="180" width="104" height="20" uuid="ff365d4b-e224-4607-800a-775930b08663"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -743,7 +736,7 @@
 					<textFieldExpression><![CDATA[$F{maximumDemandPower_10}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement mode="Opaque" x="0" y="40" width="90" height="20" backcolor="#DCE6F1" uuid="39451279-5353-4221-b5a4-cc085fb2541c"/>
+					<reportElement mode="Opaque" x="0" y="40" width="90" height="20" backcolor="#DCE6F1" uuid="e0c07804-c6b3-4963-accd-194b6710e750"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -756,7 +749,7 @@
 					<textFieldExpression><![CDATA[$F{maximumDemandYears_3}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="90" y="20" width="104" height="20" uuid="c5843a9d-b382-4035-8b0e-a0f7fa7cbcc1"/>
+					<reportElement x="90" y="20" width="104" height="20" uuid="4f4bc34f-767d-4e65-abd2-6f6b744c8dcc"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -767,7 +760,7 @@
 					<textFieldExpression><![CDATA[$F{maximumDemandPower_2}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement mode="Opaque" x="0" y="140" width="90" height="20" backcolor="#DCE6F1" uuid="e9913678-fa47-49cf-929a-1a45ab9c73d8"/>
+					<reportElement mode="Opaque" x="0" y="140" width="90" height="20" backcolor="#DCE6F1" uuid="2e51ada4-3835-45cf-95b1-5b5553dffb22"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -780,7 +773,7 @@
 					<textFieldExpression><![CDATA[$F{maximumDemandYears_8}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement mode="Opaque" x="0" y="80" width="90" height="20" backcolor="#DCE6F1" uuid="24cff2c9-ab51-42a2-813e-ef5f696abcde"/>
+					<reportElement mode="Opaque" x="0" y="80" width="90" height="20" backcolor="#DCE6F1" uuid="2398e58c-837a-4732-855e-ebe66a1eba3e"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -793,7 +786,7 @@
 					<textFieldExpression><![CDATA[$F{maximumDemandYears_5}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="90" y="40" width="104" height="20" uuid="3b2ffe02-1d97-4d98-bc3f-b92ea80d6a5d"/>
+					<reportElement x="90" y="40" width="104" height="20" uuid="78ab9cc8-c6fb-4ae9-8b95-dcc3faa6c726"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -804,7 +797,7 @@
 					<textFieldExpression><![CDATA[$F{maximumDemandPower_3}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="90" y="140" width="104" height="20" uuid="85c4edb1-fb11-422f-a54c-0a593ad167b9"/>
+					<reportElement x="90" y="140" width="104" height="20" uuid="5caf0947-a6ef-4349-b3e6-636afc0aa777"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -815,7 +808,7 @@
 					<textFieldExpression><![CDATA[$F{maximumDemandPower_8}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement mode="Opaque" x="0" y="100" width="90" height="20" backcolor="#DCE6F1" uuid="0ca2d3cf-d7ff-4692-ad29-06e59dc1d52c"/>
+					<reportElement mode="Opaque" x="0" y="100" width="90" height="20" backcolor="#DCE6F1" uuid="71969dd2-a084-4901-a02a-11a4d0d2261a"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -828,7 +821,7 @@
 					<textFieldExpression><![CDATA[$F{maximumDemandYears_6}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="90" y="0" width="104" height="20" uuid="a2bcb2bf-fc69-41bb-a677-e5c7709b9228"/>
+					<reportElement x="90" y="0" width="104" height="20" uuid="7283ebba-647d-4a55-9d80-a5372d74bf67"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -839,7 +832,7 @@
 					<textFieldExpression><![CDATA[$F{maximumDemandPower_1}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="90" y="200" width="104" height="20" uuid="6489b759-7266-4f81-ac39-6beaa89662b2"/>
+					<reportElement x="90" y="200" width="104" height="20" uuid="4d294ac3-b4fc-4f6c-9f84-660c2aeba2a9"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -850,7 +843,7 @@
 					<textFieldExpression><![CDATA[$F{maximumDemandPower_11}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement mode="Opaque" x="0" y="200" width="90" height="20" backcolor="#DCE6F1" uuid="a20c090b-f8eb-41bc-8b36-a589d7eb5d06"/>
+					<reportElement mode="Opaque" x="0" y="200" width="90" height="20" backcolor="#DCE6F1" uuid="df53476d-2c83-4a9e-846b-cf37eadda6e4"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -863,7 +856,7 @@
 					<textFieldExpression><![CDATA[$F{maximumDemandYears_11}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="90" y="160" width="104" height="20" uuid="6cdbf4cc-4eeb-4eaf-a5ca-bf9843194987"/>
+					<reportElement x="90" y="160" width="104" height="20" uuid="6603562f-1a8c-48cb-b628-b50da13416d1"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -874,7 +867,7 @@
 					<textFieldExpression><![CDATA[$F{maximumDemandPower_9}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="90" y="220" width="104" height="20" uuid="f725bac2-fbd9-4f5a-9887-efa2738de462">
+					<reportElement x="90" y="220" width="104" height="20" uuid="a9985f1e-7fe5-4009-8bd7-4ada822fbd09">
 						<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
 					</reportElement>
 					<box>
@@ -889,7 +882,7 @@
 					<textFieldExpression><![CDATA[$F{maximumDemandPower_12}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement mode="Opaque" x="0" y="20" width="90" height="20" backcolor="#DCE6F1" uuid="552f1584-6ad2-4d90-90ba-9372a2e7fed9"/>
+					<reportElement mode="Opaque" x="0" y="20" width="90" height="20" backcolor="#DCE6F1" uuid="ff755919-140c-48d6-b7d7-8098edbd4f59"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -902,7 +895,7 @@
 					<textFieldExpression><![CDATA[$F{maximumDemandYears_2}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement mode="Opaque" x="0" y="60" width="90" height="20" backcolor="#DCE6F1" uuid="1cadb4d9-206e-4a4b-82f8-02f794545e1e"/>
+					<reportElement mode="Opaque" x="0" y="60" width="90" height="20" backcolor="#DCE6F1" uuid="4a713f5e-75ff-4468-a768-0fe638f2a466"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -915,7 +908,7 @@
 					<textFieldExpression><![CDATA[$F{maximumDemandYears_4}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement mode="Opaque" x="0" y="220" width="90" height="20" backcolor="#DCE6F1" uuid="13e20d04-8912-4a1f-9c51-7e96d2f1e2c8"/>
+					<reportElement mode="Opaque" x="0" y="220" width="90" height="20" backcolor="#DCE6F1" uuid="aec40714-1866-4974-896f-aca1e084900b"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -929,11 +922,11 @@
 				</textField>
 			</frame>
 			<frame>
-				<reportElement key="frmSubscription" isPrintRepeatedValues="false" x="0" y="30" width="350" height="160" uuid="ad381fd5-5c2f-4359-9776-582e41a95950">
+				<reportElement key="frmSubscription" isPrintRepeatedValues="false" x="2" y="72" width="350" height="160" uuid="0826f5ad-224f-4911-ac6f-e2262f959b16">
 					<property name="com.jaspersoft.studio.element.name" value="frmSubscription"/>
 				</reportElement>
 				<staticText>
-					<reportElement mode="Opaque" x="0" y="0" width="110" height="20" backcolor="#DCE6F1" uuid="a3747e2a-04cc-4423-a20d-6757ed7950c6"/>
+					<reportElement mode="Opaque" x="0" y="0" width="110" height="20" backcolor="#DCE6F1" uuid="bb014a79-71fd-4aef-8cb0-a90b45ab2b4d"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -946,7 +939,7 @@
 					<text><![CDATA[お客さま番号]]></text>
 				</staticText>
 				<textField>
-					<reportElement x="110" y="0" width="240" height="20" uuid="5123eec7-c46a-482d-b3dc-37fb778d2bf4"/>
+					<reportElement x="110" y="0" width="240" height="20" uuid="4ac9974d-1245-422c-95a6-fa79eb63d57a"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -957,7 +950,7 @@
 					<textFieldExpression><![CDATA[$F{customerNumber}]]></textFieldExpression>
 				</textField>
 				<staticText>
-					<reportElement mode="Opaque" x="0" y="20" width="110" height="20" backcolor="#DCE6F1" uuid="76463a71-2584-4e57-b0e2-652f529dcfaa"/>
+					<reportElement mode="Opaque" x="0" y="20" width="110" height="20" backcolor="#DCE6F1" uuid="a82cf867-a693-4805-ac0f-984bc0dd2c07"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -970,7 +963,7 @@
 					<text><![CDATA[供給地点特定番号]]></text>
 				</staticText>
 				<textField>
-					<reportElement x="110" y="20" width="240" height="20" uuid="51c90f3e-6a60-47ed-9e8a-01b7843c9611"/>
+					<reportElement x="110" y="20" width="240" height="20" uuid="70d0a413-208a-4559-ae4b-6c50c10ff43a"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -981,7 +974,7 @@
 					<textFieldExpression><![CDATA[$F{supplyPointSpecificNumber}]]></textFieldExpression>
 				</textField>
 				<staticText>
-					<reportElement mode="Opaque" x="0" y="60" width="110" height="20" backcolor="#DCE6F1" uuid="f0eec344-ce1a-4ceb-9481-bcad2bc10020"/>
+					<reportElement mode="Opaque" x="0" y="60" width="110" height="20" backcolor="#DCE6F1" uuid="27cc0043-b132-4a8d-941c-fcf5ce66b088"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -994,7 +987,7 @@
 					<text><![CDATA[]]></text>
 				</staticText>
 				<textField>
-					<reportElement x="110" y="60" width="240" height="20" uuid="6a90d203-43b5-40ed-ad5f-2733bb9c8d1a"/>
+					<reportElement x="110" y="60" width="240" height="20" uuid="cfecdbd3-b162-49d5-a4e5-c370c95900c1"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1005,7 +998,7 @@
 					<textFieldExpression><![CDATA[$F{demandLocationPlantName}]]></textFieldExpression>
 				</textField>
 				<staticText>
-					<reportElement mode="Opaque" x="0" y="40" width="110" height="20" backcolor="#DCE6F1" uuid="0a2f9c2d-3b46-4f7a-8d93-e605dfbd0cf9"/>
+					<reportElement mode="Opaque" x="0" y="40" width="110" height="20" backcolor="#DCE6F1" uuid="269047d8-e1dd-4021-a5eb-d04452629bc2"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1018,7 +1011,7 @@
 					<text><![CDATA[需要先名称]]></text>
 				</staticText>
 				<textField>
-					<reportElement x="110" y="40" width="240" height="20" uuid="ecb02bd4-d1be-4d4d-834d-488ad1acbb36"/>
+					<reportElement x="110" y="40" width="240" height="20" uuid="e46d284f-721c-481b-8473-f93617a8e917"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1029,7 +1022,7 @@
 					<textFieldExpression><![CDATA[$F{demandDestinationName}]]></textFieldExpression>
 				</textField>
 				<staticText>
-					<reportElement mode="Opaque" x="0" y="140" width="110" height="20" backcolor="#DCE6F1" uuid="93dfb218-4c68-4c11-a742-59c1651ad275"/>
+					<reportElement mode="Opaque" x="0" y="140" width="110" height="20" backcolor="#DCE6F1" uuid="8252153c-0d1c-411e-8295-c3c3f0a542df"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1042,7 +1035,7 @@
 					<text><![CDATA[契約電力(kW)]]></text>
 				</staticText>
 				<staticText>
-					<reportElement mode="Opaque" x="0" y="100" width="110" height="20" backcolor="#DCE6F1" uuid="ab950597-305a-44e0-b66f-08b4ade00e02"/>
+					<reportElement mode="Opaque" x="0" y="100" width="110" height="20" backcolor="#DCE6F1" uuid="2b61932b-0ca3-4a00-8938-990119d5eb37"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1055,7 +1048,7 @@
 					<text><![CDATA[]]></text>
 				</staticText>
 				<textField>
-					<reportElement x="110" y="120" width="240" height="20" uuid="00c022a5-2dec-415d-aea9-54e04b52150b"/>
+					<reportElement x="110" y="120" width="240" height="20" uuid="9ab1e7c6-eeaa-40f0-8730-eff82162a17c"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1066,7 +1059,7 @@
 					<textFieldExpression><![CDATA[$F{contractType}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="110" y="100" width="240" height="20" uuid="0b658e13-1f22-4310-b7a6-0aaaaeeacb44"/>
+					<reportElement x="110" y="100" width="240" height="20" uuid="920f752a-7225-42b3-96f9-1316a50ef337"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1077,7 +1070,7 @@
 					<textFieldExpression><![CDATA[$F{demandDestinationBillApartmentName}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="110" y="140" width="240" height="20" uuid="f1b0586c-d715-45ff-8e64-e00f7b202b51"/>
+					<reportElement x="110" y="140" width="240" height="20" uuid="ff4ad728-0b3c-4ca0-a9b5-c3f5e4553954"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1088,7 +1081,7 @@
 					<textFieldExpression><![CDATA[$F{contractPower}]]></textFieldExpression>
 				</textField>
 				<staticText>
-					<reportElement mode="Opaque" x="0" y="80" width="110" height="20" backcolor="#DCE6F1" uuid="fff089c0-0a66-4225-bdeb-56a00df4ddb0"/>
+					<reportElement mode="Opaque" x="0" y="80" width="110" height="20" backcolor="#DCE6F1" uuid="fce5e83f-568a-42ba-88ed-4610ffc3bd0e"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1101,7 +1094,7 @@
 					<text><![CDATA[需要先住所]]></text>
 				</staticText>
 				<staticText>
-					<reportElement mode="Opaque" x="0" y="120" width="110" height="20" backcolor="#DCE6F1" uuid="c82975b1-6b3d-4195-852f-b72502614e80"/>
+					<reportElement mode="Opaque" x="0" y="120" width="110" height="20" backcolor="#DCE6F1" uuid="ee77edfc-e304-4959-92d1-11d0500b4053"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1114,7 +1107,7 @@
 					<text><![CDATA[契約種別]]></text>
 				</staticText>
 				<textField>
-					<reportElement x="110" y="80" width="240" height="20" uuid="abe28db5-866c-4ab5-9f6a-4c7dc9a300fa"/>
+					<reportElement x="110" y="80" width="240" height="20" uuid="6be763e0-2f56-4c7f-90ee-a7e38c4189d4"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1126,11 +1119,11 @@
 				</textField>
 			</frame>
 			<frame>
-				<reportElement key="frmPowerConsumption" x="0" y="230" width="350" height="60" uuid="e569e986-400f-425a-8518-9103a33d883b">
+				<reportElement key="frmPowerConsumption" x="2" y="272" width="350" height="60" uuid="0b18ac5f-ccd7-48d1-8dbf-e6afeb80d78c">
 					<property name="com.jaspersoft.studio.element.name" value="frmPowerConsumption"/>
 				</reportElement>
 				<textField>
-					<reportElement x="110" y="20" width="100" height="20" uuid="ab747731-1fe7-4407-8533-d208ce134c16"/>
+					<reportElement x="110" y="20" width="100" height="20" uuid="572f02e0-32f1-4957-9478-c012641eb8b7"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1141,7 +1134,7 @@
 					<textFieldExpression><![CDATA[$F{theTotalAmountOfElectricPowerUsed} + " kWh"]]></textFieldExpression>
 				</textField>
 				<staticText>
-					<reportElement mode="Opaque" x="0" y="40" width="110" height="20" backcolor="#DCE6F1" uuid="b7dc225e-c535-46be-b89c-eebaa278d50a"/>
+					<reportElement mode="Opaque" x="0" y="40" width="110" height="20" backcolor="#DCE6F1" uuid="228a2cfa-bdcd-40f3-a3d7-d4e911cee9a0"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1154,7 +1147,7 @@
 					<text><![CDATA[当月最大需要電力]]></text>
 				</staticText>
 				<staticText>
-					<reportElement mode="Opaque" x="0" y="20" width="110" height="20" backcolor="#DCE6F1" uuid="9fb16552-9bad-41ae-b102-a16bd1e901ea"/>
+					<reportElement mode="Opaque" x="0" y="20" width="110" height="20" backcolor="#DCE6F1" uuid="550d9e22-afcf-41ff-9ebe-72d4eca82092"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1167,7 +1160,7 @@
 					<text><![CDATA[使用電力量合計]]></text>
 				</staticText>
 				<textField>
-					<reportElement x="110" y="40" width="240" height="20" uuid="f217290b-bda4-42bd-897e-12c518392210"/>
+					<reportElement x="110" y="40" width="240" height="20" uuid="cc830d9c-bd7b-499a-a85d-920f3a8e86be"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1178,7 +1171,7 @@
 					<textFieldExpression><![CDATA[$F{monthMaximumDemandPower}+" kW"]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="110" y="0" width="240" height="20" uuid="88d96554-f996-4353-a54b-d6900a36ee58"/>
+					<reportElement x="110" y="0" width="240" height="20" uuid="62819dd3-b4fe-456e-8ff9-42c78e176db7"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1189,7 +1182,7 @@
 					<textFieldExpression><![CDATA[$F{periodOfUseSelf}+" ～ "+$F{periodOfUseOptimal}]]></textFieldExpression>
 				</textField>
 				<staticText>
-					<reportElement mode="Opaque" x="0" y="0" width="110" height="20" backcolor="#DCE6F1" uuid="68336227-dd5f-4e5a-b8b3-15cf623fa7a6"/>
+					<reportElement mode="Opaque" x="0" y="0" width="110" height="20" backcolor="#DCE6F1" uuid="dc5a4c56-99f2-472b-a67c-4f5db539e77a"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1203,7 +1196,7 @@
 ]]></text>
 				</staticText>
 				<staticText>
-					<reportElement mode="Opaque" x="210" y="20" width="50" height="20" backcolor="#DCE6F1" uuid="335c09a1-c147-4933-bb35-8e9f5614f998"/>
+					<reportElement mode="Opaque" x="210" y="20" width="50" height="20" backcolor="#DCE6F1" uuid="1baffed3-6931-4fe7-b825-5070d23fc921"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1216,7 +1209,7 @@
 					<text><![CDATA[力率]]></text>
 				</staticText>
 				<textField>
-					<reportElement x="260" y="20" width="90" height="20" uuid="bd5fd94a-c13d-44a4-ac0e-e0527b558c9a"/>
+					<reportElement x="260" y="20" width="90" height="20" uuid="9dea37f7-d50b-43b7-af78-930a48e02f30"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1228,21 +1221,21 @@
 				</textField>
 			</frame>
 			<staticText>
-				<reportElement x="0" y="310" width="139" height="20" uuid="16bc2af4-c083-417a-a287-9ba2b30ce24d"/>
+				<reportElement x="2" y="352" width="139" height="20" uuid="5c27338d-e188-4d7f-b572-eb653cd60e8f"/>
 				<textElement>
 					<font size="14" isBold="true"/>
 				</textElement>
 				<text><![CDATA[指示数のお知らせ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="360" y="310" width="194" height="20" uuid="d42b1e4b-c838-4e50-b57c-f76e77ff5440"/>
+				<reportElement x="362" y="352" width="194" height="20" uuid="7a53dad7-c8de-432a-9581-f69606e6bffa"/>
 				<textElement>
 					<font size="14" isBold="true"/>
 				</textElement>
 				<text><![CDATA[燃料費調整額のお知らせ]]></text>
 			</staticText>
 			<frame>
-				<reportElement key="frmAnnFuelCost" isPrintRepeatedValues="false" x="360" y="339" width="194" height="71" uuid="c5f6df51-00c5-428e-b8b4-641796819b3a">
+				<reportElement key="frmAnnFuelCost" isPrintRepeatedValues="false" x="362" y="381" width="194" height="71" uuid="a4bb4bb0-4eb2-45e9-a4e9-4b7022354d13">
 					<property name="com.jaspersoft.studio.element.name" value="frmAnnFuelCost"/>
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.grid.JSSGridBagLayout"/>
 				</reportElement>
@@ -1253,7 +1246,7 @@
 					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<staticText>
-					<reportElement mode="Opaque" x="0" y="0" width="49" height="24" backcolor="#DCE6F1" uuid="14434c0e-0f68-4297-aba1-0466e28fe35f">
+					<reportElement mode="Opaque" x="0" y="0" width="49" height="24" backcolor="#DCE6F1" uuid="c8b95698-b98c-43f7-8b2b-d5a9ae5625c9">
 						<property name="com.jaspersoft.layout.grid.x" value="0"/>
 						<property name="com.jaspersoft.layout.grid.y" value="0"/>
 						<property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
@@ -1272,7 +1265,7 @@
 					<text><![CDATA[前月]]></text>
 				</staticText>
 				<textField>
-					<reportElement x="49" y="0" width="145" height="24" uuid="5621fc04-3f43-4be5-bf60-4e35d2478647">
+					<reportElement x="49" y="0" width="145" height="24" uuid="2ba00727-482c-431d-9640-fd42a3dfbb5f">
 						<property name="com.jaspersoft.layout.grid.x" value="1"/>
 						<property name="com.jaspersoft.layout.grid.y" value="0"/>
 						<property name="com.jaspersoft.layout.grid.weight.x" value="3.0"/>
@@ -1289,7 +1282,7 @@
 					<textFieldExpression><![CDATA[$F{previousMonthFuelCostAdjustmentAmount}]]></textFieldExpression>
 				</textField>
 				<staticText>
-					<reportElement mode="Opaque" x="0" y="24" width="49" height="24" backcolor="#DCE6F1" uuid="6e225bfb-3cb6-4412-aab5-c7dea9c3b9ba">
+					<reportElement mode="Opaque" x="0" y="24" width="49" height="24" backcolor="#DCE6F1" uuid="03a8ed1a-9217-4eab-bdcd-4694976427dd">
 						<property name="com.jaspersoft.layout.grid.x" value="0"/>
 						<property name="com.jaspersoft.layout.grid.y" value="1"/>
 						<property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
@@ -1308,7 +1301,7 @@
 					<text><![CDATA[当月]]></text>
 				</staticText>
 				<textField>
-					<reportElement x="49" y="24" width="145" height="24" uuid="15dbc8cb-1596-4632-b82e-aa997f5aa447">
+					<reportElement x="49" y="24" width="145" height="24" uuid="7d9eea79-4234-4fc0-aba1-b97377d6dd05">
 						<property name="com.jaspersoft.layout.grid.x" value="1"/>
 						<property name="com.jaspersoft.layout.grid.y" value="1"/>
 						<property name="com.jaspersoft.layout.grid.weight.x" value="3.0"/>
@@ -1325,7 +1318,7 @@
 					<textFieldExpression><![CDATA[$F{fuelCostAdjustmentAmountTheMonth_1}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="49" y="48" width="145" height="23" uuid="fa59c418-93f9-454b-887c-aecf3f8f0299">
+					<reportElement x="49" y="48" width="145" height="23" uuid="02004e53-ae9e-40aa-ae61-bcbf4435fa5c">
 						<property name="com.jaspersoft.layout.grid.x" value="1"/>
 						<property name="com.jaspersoft.layout.grid.y" value="2"/>
 						<property name="com.jaspersoft.layout.grid.weight.x" value="3.0"/>
@@ -1342,7 +1335,7 @@
 					<textFieldExpression><![CDATA[$F{fuelCostAdjustmentAmountTheNextMonth_1}]]></textFieldExpression>
 				</textField>
 				<staticText>
-					<reportElement mode="Opaque" x="0" y="48" width="49" height="23" backcolor="#DCE6F1" uuid="b9501400-ac88-46e0-b22f-4264bb8632a8">
+					<reportElement mode="Opaque" x="0" y="48" width="49" height="23" backcolor="#DCE6F1" uuid="3da062a2-eb9c-4b3c-8c74-df3da10dbcbd">
 						<property name="com.jaspersoft.layout.grid.x" value="0"/>
 						<property name="com.jaspersoft.layout.grid.y" value="2"/>
 						<property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
@@ -1362,14 +1355,14 @@
 				</staticText>
 			</frame>
 			<staticText>
-				<reportElement x="360" y="428" width="194" height="20" uuid="c5995c5f-62f7-49eb-a8fc-90b620120163"/>
+				<reportElement x="362" y="470" width="194" height="20" uuid="5aaf6fdc-9781-44c6-b46c-29e351de8b1b"/>
 				<textElement>
 					<font size="14" isBold="true"/>
 				</textElement>
 				<text><![CDATA[再エネ発電促進賦課金のお知らせ]]></text>
 			</staticText>
 			<frame>
-				<reportElement key="frmPowerLevy" isPrintRepeatedValues="false" x="360" y="453" width="194" height="23" uuid="e2a090e9-c175-46aa-a9da-91f9d6742369">
+				<reportElement key="frmPowerLevy" isPrintRepeatedValues="false" x="362" y="495" width="194" height="23" uuid="6b50be46-2272-4110-8551-e0334059b87d">
 					<property name="com.jaspersoft.studio.element.name" value="frmPowerLevy"/>
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.grid.JSSGridBagLayout"/>
 				</reportElement>
@@ -1380,7 +1373,7 @@
 					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<staticText>
-					<reportElement mode="Opaque" x="0" y="0" width="49" height="23" backcolor="#DCE6F1" uuid="e76e0abd-c20a-4724-8731-c70070f681ca">
+					<reportElement mode="Opaque" x="0" y="0" width="49" height="23" backcolor="#DCE6F1" uuid="59f6d48f-3ec0-4f8c-8210-8f29943566dd">
 						<property name="com.jaspersoft.layout.grid.x" value="0"/>
 						<property name="com.jaspersoft.layout.grid.y" value="0"/>
 						<property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
@@ -1399,7 +1392,7 @@
 					<text><![CDATA[前月]]></text>
 				</staticText>
 				<textField>
-					<reportElement x="49" y="0" width="145" height="23" uuid="c044d569-36ee-4605-b71f-ad5d4ad039c0">
+					<reportElement x="49" y="0" width="145" height="23" uuid="f9ab0609-ee5e-4505-94cc-7f026eedfb01">
 						<property name="com.jaspersoft.layout.grid.x" value="1"/>
 						<property name="com.jaspersoft.layout.grid.y" value="0"/>
 						<property name="com.jaspersoft.layout.grid.weight.x" value="3.0"/>
@@ -1412,8 +1405,40 @@
 					<textFieldExpression><![CDATA[$F{renewableEnergyPowerGenerationPromotionLevyTheMonth}]]></textFieldExpression>
 				</textField>
 			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="18" splitType="Stretch">
+			<textField>
+				<reportElement x="206" y="0" width="90" height="18" uuid="a4b1f37b-7448-4699-9e23-3bd6863c17d9"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{billableNumberOfBases}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="0" width="94" height="15" uuid="1c8e4450-600d-4224-8b70-05c9b7c77f37"/>
+				<textFieldExpression><![CDATA[$F{dateOfIssuance}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="200" height="18" uuid="0fc33025-d1b4-45dd-8314-adbdf32fb5a6"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{billingDate}+"　発行年月日"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="390" y="0" width="60" height="15" uuid="509d7a26-198e-4221-9a9b-9a237495bcc7"/>
+				<text><![CDATA[発行年月日]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="74" splitType="Stretch">
 			<componentElement>
-				<reportElement key="lstFeeBreakdown" x="0" y="570" width="554" height="29" uuid="10af00e4-36bc-4e14-be6b-aaeb68f23778">
+				<reportElement key="lstFeeBreakdown" x="0" y="20" width="554" height="29" uuid="10af00e4-36bc-4e14-be6b-aaeb68f23778">
 					<property name="com.jaspersoft.studio.element.name" value="lstFeeBreakdown"/>
 				</reportElement>
 				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
