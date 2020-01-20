@@ -4,24 +4,12 @@
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<style name="defaultStyle" isDefault="true" fontName="IPAexフォント"/>
 	<subDataset name="FeeBreakdownDataSet" uuid="384bbac7-acdf-4723-82be-cb77fed1afe0">
-		<field name="t949101" class="java.lang.String">
-			<fieldDescription><![CDATA[項目名]]></fieldDescription>
-		</field>
-		<field name="t949102" class="java.math.BigDecimal">
-			<fieldDescription><![CDATA[使用量]]></fieldDescription>
-		</field>
-		<field name="t949103" class="java.lang.String">
-			<fieldDescription><![CDATA[使用量単位]]></fieldDescription>
-		</field>
-		<field name="t949104" class="java.math.BigDecimal">
-			<fieldDescription><![CDATA[単価]]></fieldDescription>
-		</field>
-		<field name="t949105" class="java.lang.String">
-			<fieldDescription><![CDATA[単価単位]]></fieldDescription>
-		</field>
-		<field name="t949106" class="java.math.BigDecimal">
-			<fieldDescription><![CDATA[料金]]></fieldDescription>
-		</field>
+		<field name="t949101" class="java.lang.String"/>
+		<field name="t949102" class="java.math.BigDecimal"/>
+		<field name="t949103" class="java.lang.String"/>
+		<field name="t949104" class="java.math.BigDecimal"/>
+		<field name="t949105" class="java.lang.String"/>
+		<field name="t949106" class="java.math.BigDecimal"/>
 	</subDataset>
 	<field name="dateOfIssuance" class="java.lang.String">
 		<fieldDescription><![CDATA[発行年月日]]></fieldDescription>
