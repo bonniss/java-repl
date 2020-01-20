@@ -40,4 +40,10 @@ public class Tuny {
         this.name = name;
         this.bio = bio;
     }
+
+    public Tuny(String name, String bio, int age) {
+        this.name = name;
+        this.bio = bio;
+        this.age = new BigDecimal(age);
+    }
 }

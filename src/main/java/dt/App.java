@@ -4,10 +4,13 @@ import org.apache.commons.lang.StringUtils;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 import javax.swing.table.AbstractTableModel;
 
@@ -21,6 +24,7 @@ import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.data.JRBeanArrayDataSource;
+import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 import net.sf.jasperreports.engine.data.JRTableModelDataSource;
 
 import java.io.File;
@@ -43,14 +47,19 @@ public final class App {
         System.out.println("----------------------------------------------------");
 
         // System.out.println(jrxml.exists() ? jrxml.getAbsolutePath() : "DUYTRUNG");
-        // generateReport("nana", new JRBeanArrayDataSource(TunyFactory.getTunyList()));
 
-        System.out.println(convertToStringWithUnit("DUYTRUNG", UnitName.YEN_KILOWATT_HOUR));
+        // generateReport("nana-list", new JRBeanCollectionDataSource(Arrays.asList(new TunyTune[] { new TunyTune() })));
+
+        List<Tuny> tunyList = Arrays.asList(TunyFactory.getTunyList());
+        List<Tuny> olderThan400 = tunyList.stream().filter(tuny -> tuny.getAge().compareTo(new BigDecimal(4000)) > 0).collect(Collectors.toList());
+        System.out.println(olderThan400.size());
+
+        // System.out.println(convertToStringWithUnit("DUYTRUNG", UnitName.YEN_KILOWATT_HOUR));
 
         System.out.println("----------------------------------------------------");
     }
 
-    public static void generateReport(String fileName, JRBeanArrayDataSource beanDataSource) {
+    public static void generateReport(String fileName, JRBeanCollectionDataSource beanDataSource) {
         File jrxml = new File(fileName + ".jrxml");
 
         System.out.println(jrxml.exists() ? jrxml.getAbsolutePath() : "DUYTRUNG");
@@ -58,10 +67,10 @@ public final class App {
         try {
             JasperReport jasperReport = JasperCompileManager.compileReport(jrxml.getAbsolutePath());
 
+            JasperPrint print = JasperFillManager.fillReport(jasperReport, null, beanDataSource);
+
             // JasperPrint print = JasperFillManager.fillReport(jasperReport, null,
-            // beanDataSource);
-            JasperPrint print = JasperFillManager.fillReport(jasperReport, null,
-                    new JRTableModelDataSource(new TunyTableModel()));
+            //         new JRTableModelDataSource(new TunyTableModel()));
 
             File pdf = new File(fileName + ".pdf");
 
@@ -72,12 +81,39 @@ public final class App {
         }
     }
 
+
+    public static class TunyWrapper {
+        private String title;
+
+        public String getTitle() {
+            return this.title;
+        }
+
+        public void setTitle(String title) {
+            this.title = title;
+        }
+
+        private Tuny[] tunies;
+
+        public Tuny[] getTunies() {
+            return this.tunies;
+        }
+
+        public void setTunies(Tuny[] tunies) {
+            this.tunies = tunies;
+        }
+
+        public TunyWrapper() {
+            // this.title = "DUYTRUNG";
+            this.tunies = TunyFactory.getTunyList();
+        }
+    }
+
     private static class TunyTableModel extends AbstractTableModel {
 
         private String[] columnNames = { "id", "name", "bio", "bambi" };
 
         private Object[][] data = {
-
         };
 
         public TunyTableModel() {
@@ -150,7 +186,7 @@ public final class App {
         public InvoicingDetailsModel() {
         }
 
-        public InvoicingDetailsModel(InvoicingHtbeGetInvoiceHistoryResult invoicingHistory, T948EntityModel issuanceHistoryDetail, T949EntityModel billingHistoryFeeBreakdown) {
+        public InvoicingDetailsModel(InvoicingHtbeGetInvoiceHistoryResult invoicingHistory, T948EntityModel issuanceHistoryDetail, List<T949EntityModel> billingHistoryFeeBreakdown) {
             String serviceType = issuanceHistoryDetail.getT948101();
 
             if(serviceType.equalsIgnoreCase(HIGH_PRESSURE)) {
@@ -217,7 +253,8 @@ public final class App {
                     "thePreviousMonthTheEffectiveInstructionNumberMainLine",
                     "thePreviousMonthTheEffectiveInstructionNumberSpareLine",
                     "theTotalAmountOfElectricPowerUsed",
-                    "totalAmt"
+                    "totalAmt",
+                    "feeBreakdownList"
                 };
 
                 data = new Object[][] {
@@ -284,7 +321,8 @@ public final class App {
                         convertBigDecimalToString(issuanceHistoryDetail.getT948410()),   // NUMERIC | thePreviousMonthTheEffectiveInstructionNumberMainLine
                         convertBigDecimalToString(issuanceHistoryDetail.getT948411()),   // NUMERIC | thePreviousMonthTheEffectiveInstructionNumberSpareLine
                         convertBigDecimalToString(issuanceHistoryDetail.getT948203()),   // NUMERIC | theTotalAmountOfElectricPowerUsed
-                        convertBigDecimalToString(calcSum(issuanceHistoryDetail.getT948901(), issuanceHistoryDetail.getT948902()))
+                        convertBigDecimalToString(calcSum(issuanceHistoryDetail.getT948901(), issuanceHistoryDetail.getT948902())),
+                        billingHistoryFeeBreakdown
                     }
                 };
             } else if(serviceType.equalsIgnoreCase(LOW_PRESSURE)) {
@@ -317,7 +355,8 @@ public final class App {
                     "renewableEnergyPowerGenerationPromotionLevyTheMonth",
                     "billingAmount",
                     "taxEquivalent",
-                    "totalAmt"
+                    "totalAmt",
+                    "feeBreakdownList"
                 };
 
                 data = new Object[][] {
@@ -350,7 +389,8 @@ public final class App {
                         convertBigDecimalToString(issuanceHistoryDetail.getT948701()),   // NUMERIC | renewableEnergyPowerGenerationPromotionLevyTheMonth
                         convertBigDecimalToString(issuanceHistoryDetail.getT948901()),   // NUMERIC | billingAmount
                         convertBigDecimalToString(issuanceHistoryDetail.getT948902()),   // NUMERIC | taxEquivalent
-                        convertBigDecimalToString(calcSum(issuanceHistoryDetail.getT948901(), issuanceHistoryDetail.getT948902()))
+                        convertBigDecimalToString(calcSum(issuanceHistoryDetail.getT948901(), issuanceHistoryDetail.getT948902())),
+                        billingHistoryFeeBreakdown
                     }
                 };
             }

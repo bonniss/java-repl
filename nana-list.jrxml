@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="nana" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b66a4d2b-ce48-4f78-9be3-44f02264b3c0">
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+    <style name="defaultStyle" isDefault="true" fontName="IPAexフォント"/>
+    <subDataset name="Dataset1" uuid="7d2e4515-3f3c-4008-a5a5-a19c11e7be1a">
+        <field name="name" class="java.lang.String"/>
+        <field name="bio" class="java.lang.String"/>
+    </subDataset>
+    <field name="tagLine" class="java.lang.String"/>
+    <field name="tunies" class="java.util.List"/>
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <title>
+        <band height="79" splitType="Stretch">
+            <staticText>
+                <reportElement x="0" y="0" width="555" height="79" uuid="3ccd4623-2383-4e64-87bd-20b0fec64cfa"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <text><![CDATA[REPORT USING LIST]]></text>
+            </staticText>
+        </band>
+    </title>
+    <pageHeader>
+        <band height="35" splitType="Stretch"/>
+    </pageHeader>
+    <columnHeader>
+        <band height="61" splitType="Stretch">
+            <staticText>
+                <reportElement x="0" y="0" width="100" height="30" uuid="e5c2c084-53f4-4d25-8119-09b124e12e88">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9048b408-67ce-4de6-b049-b1ff8edecc85"/>
+                </reportElement>
+                <text><![CDATA[tagLine]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="130" y="0" width="100" height="30" uuid="0da9092a-54c1-43cb-abe5-76b448ca3a88">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ef2b5337-cdfa-4a3a-b0dd-d7bcaacb0525"/>
+                </reportElement>
+                <text><![CDATA[tunies]]></text>
+            </staticText>
+        </band>
+    </columnHeader>
+    <detail>
+        <band height="125" splitType="Stretch">
+            <textField>
+                <reportElement x="0" y="10" width="100" height="30" uuid="0e31b005-7974-4034-ab3a-9a6263295741">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9048b408-67ce-4de6-b049-b1ff8edecc85"/>
+                </reportElement>
+                <textFieldExpression><![CDATA[$F{tagLine}]]></textFieldExpression>
+            </textField>
+            <!-- <textField>
+                <reportElement x="130" y="10" width="100" height="30" uuid="3e60c97f-4f22-4463-b072-36294c6e992b">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ef2b5337-cdfa-4a3a-b0dd-d7bcaacb0525"/>
+                </reportElement>
+                <textFieldExpression><![CDATA[$F{tunies}.get(0).toString()]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="270" y="10" width="100" height="30" uuid="2d354544-2475-4408-828b-32ab0b4a79a1">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ef2b5337-cdfa-4a3a-b0dd-d7bcaacb0525"/>
+                </reportElement>
+                <textFieldExpression><![CDATA[$F{tunies}.size()]]></textFieldExpression>
+            </textField> -->
+            <componentElement>
+                <reportElement x="0" y="80" width="555" height="30" uuid="2c3d5973-ea5c-46f8-bc12-ae10aef7d0aa">
+                    <property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
+                </reportElement>
+                <jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+                    <datasetRun subDataset="Dataset1" uuid="4a561d9a-5028-41c8-8e9f-b4fdbaf3c8c3">
+                        <dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{tunies}) ]]></dataSourceExpression>
+                    </datasetRun>
+                    <jr:listContents height="30" width="555">
+                        <textField>
+                            <reportElement x="0" y="0" width="278" height="30" uuid="f6c0583c-e2ee-419d-8927-17eb823a0e45"/>
+                            <textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+                        </textField>
+                        <textField>
+                            <reportElement x="278" y="0" width="277" height="30" uuid="f9deeb79-d663-496b-bb4d-7fcedd3a6e4b"/>
+                            <textFieldExpression><![CDATA[$F{bio}]]></textFieldExpression>
+                        </textField>
+                    </jr:listContents>
+                </jr:list>
+            </componentElement>
+        </band>
+    </detail>
+    <columnFooter>
+        <band height="45" splitType="Stretch"/>
+    </columnFooter>
+    <pageFooter>
+        <band height="54" splitType="Stretch"/>
+    </pageFooter>
+    <summary>
+        <band height="43" splitType="Stretch">
+            <staticText>
+                <reportElement x="0" y="0" width="555" height="43" uuid="55d8ffd7-3b2d-454e-8050-bb642047a94e"/>
+                <textElement>
+                    <font fontName="IPAexフォント"/>
+                </textElement>
+                <text><![CDATA[丁目、番号、号間は"-"で結合する　※値が無い場合は結合しない
+棟、部屋番号間は"-"で結合する　※値が無い場合は結合しない
+                                ]]>                </text>
+            </staticText>
+        </band>
+    </summary>
+</jasperReport>

@@ -3,6 +3,26 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PEB0011_DETAIL_HP" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d05b963e-f2ec-4825-8a5b-6fbceaf4e311">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<style name="defaultStyle" isDefault="true" fontName="IPAexフォント"/>
+	<subDataset name="FeeBreakdownDataSet" uuid="384bbac7-acdf-4723-82be-cb77fed1afe0">
+		<field name="t949101" class="java.lang.String">
+			<fieldDescription><![CDATA[itemName | 項目名]]></fieldDescription>
+		</field>
+		<field name="t949102" class="java.lang.String">
+			<fieldDescription><![CDATA[amountToUse | 使用量]]></fieldDescription>
+		</field>
+		<field name="t949103" class="java.lang.String">
+			<fieldDescription><![CDATA[usageUnit | 使用量単位]]></fieldDescription>
+		</field>
+		<field name="t949104" class="java.lang.String">
+			<fieldDescription><![CDATA[unitPrice | 単価]]></fieldDescription>
+		</field>
+		<field name="t949105" class="java.lang.String">
+			<fieldDescription><![CDATA[unitPriceUnit | 単価単位]]></fieldDescription>
+		</field>
+		<field name="t949106" class="java.lang.String">
+			<fieldDescription><![CDATA[fee | 料金]]></fieldDescription>
+		</field>
+	</subDataset>
 	<field name="dateOfIssuance" class="java.lang.String">
 		<fieldDescription><![CDATA[発行年月日]]></fieldDescription>
 	</field>
@@ -192,6 +212,9 @@
 	<field name="totalAmt" class="java.lang.String">
 		<fieldDescription><![CDATA[消費税相当額]]></fieldDescription>
 	</field>
+	<field name="feeBreakdownList" class="java.util.List">
+		<fieldDescription><![CDATA[List<T949> feeBreakdownList]]></fieldDescription>
+	</field>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -227,7 +250,7 @@
 		<band height="18" splitType="Stretch"/>
 	</pageHeader>
 	<detail>
-		<band height="553" splitType="Stretch">
+		<band height="685" splitType="Stretch">
 			<staticText>
 				<reportElement x="0" y="0" width="100" height="20" uuid="8ec30491-ddbd-43c3-9993-0b1b499366cc"/>
 				<textElement>
@@ -1401,6 +1424,47 @@
 					<textFieldExpression><![CDATA[$F{renewableEnergyPowerGenerationPromotionLevyTheMonth}]]></textFieldExpression>
 				</textField>
 			</frame>
+			<componentElement>
+				<reportElement key="lstFeeBreakdown" x="0" y="570" width="554" height="29" uuid="10af00e4-36bc-4e14-be6b-aaeb68f23778">
+					<property name="com.jaspersoft.studio.element.name" value="lstFeeBreakdown"/>
+				</reportElement>
+				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+					<datasetRun subDataset="FeeBreakdownDataSet" uuid="c7fcb1a5-1215-4d18-98ea-072dcb90bc3d">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{feeBreakdownList})]]></dataSourceExpression>
+					</datasetRun>
+					<jr:listContents height="29" width="554">
+						<textField>
+							<reportElement x="16" y="0" width="130" height="20" uuid="1080354c-5db1-4ee7-a408-8cf624c3e3cd"/>
+							<textFieldExpression><![CDATA[$F{t949101}]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement x="160" y="0" width="74" height="20" uuid="0c319ceb-3950-4b5e-9309-95b4e2d511b3"/>
+							<textFieldExpression><![CDATA[$F{t949102}]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement x="290" y="0" width="70" height="20" uuid="6efa20cf-738a-4eec-a16d-e48c296a6ffb"/>
+							<textFieldExpression><![CDATA[$F{t949104}]]></textFieldExpression>
+						</textField>
+						<staticText>
+							<reportElement x="504" y="0" width="40" height="20" uuid="84f7d348-b326-44c1-befd-081c81879b08"/>
+							<text><![CDATA[円/kWh
+]]></text>
+						</staticText>
+						<textField>
+							<reportElement x="235" y="0" width="40" height="20" uuid="5f9d2d42-b5a3-4fe5-8463-99a5a9d493f5"/>
+							<textFieldExpression><![CDATA[$F{t949103}]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement x="360" y="0" width="40" height="20" uuid="5b8b6cec-264a-4214-a837-317b1e156b85"/>
+							<textFieldExpression><![CDATA[$F{t949105}]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement x="414" y="0" width="90" height="20" uuid="b77f7f36-be68-4c6c-9c3e-b968cd8fe76c"/>
+							<textFieldExpression><![CDATA[$F{t949106}]]></textFieldExpression>
+						</textField>
+					</jr:listContents>
+				</jr:list>
+			</componentElement>
 		</band>
 	</detail>
 	<columnFooter>
